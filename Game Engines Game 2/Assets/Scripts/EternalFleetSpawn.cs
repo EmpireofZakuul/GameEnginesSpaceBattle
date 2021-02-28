@@ -22,25 +22,25 @@ public class EternalFleetSpawn : MonoBehaviour
             {
 
                 Vector3 StartPos = new Vector3(shipStartPos.position.x, shipStartPos.position.y + row * amountOfSpaceBetweenObject, shipStartPos.position.z - i * amountOfSpaceBetweenObject);
-                Transform _ship = Instantiate(ship, StartPos, Quaternion.Euler(90, 0, 0));
+                Transform _ship = Instantiate(ship, StartPos, Quaternion.Euler(90, 180, 0));
                 _ship.SetParent(shipParent);
 
                 if (row != 0)
                 {
                     Vector3 StartPosi = new Vector3(shipStartPos.position.x, shipStartPos.position.y - row * amountOfSpaceBetweenObject, shipStartPos.position.z - i * amountOfSpaceBetweenObject);
-                    Transform _shipi = Instantiate(ship, StartPosi, Quaternion.Euler(90, 0, 0));
+                    Transform _shipi = Instantiate(ship, StartPosi, Quaternion.Euler(90, 180, 0));
                     _shipi.SetParent(shipParent);
                 }
                 if (i != 0)
                 {
                     Vector3 StartPosition = new Vector3(shipStartPos.position.x, shipStartPos.position.y + row * amountOfSpaceBetweenObject, shipStartPos.position.z + i * amountOfSpaceBetweenObject);
-                    Transform _ships = Instantiate(ship, StartPosition, Quaternion.Euler(90, 0, 0));
+                    Transform _ships = Instantiate(ship, StartPosition, Quaternion.Euler(90, 180, 0));
                     _ships.SetParent(shipParent);
 
                     if (row != 0)
                     {
                         Vector3 StartPosi = new Vector3(shipStartPos.position.x, shipStartPos.position.y - row * amountOfSpaceBetweenObject, shipStartPos.position.z + i * amountOfSpaceBetweenObject);
-                        Transform _shipis = Instantiate(ship, StartPosi, Quaternion.Euler(90, 0, 0));
+                        Transform _shipis = Instantiate(ship, StartPosi, Quaternion.Euler(90, 180, 0));
                         _shipis.SetParent(shipParent);
                     }
                 }
@@ -54,4 +54,5 @@ public class EternalFleetSpawn : MonoBehaviour
     {
 
     }
+
 }
