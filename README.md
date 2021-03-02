@@ -7,6 +7,8 @@
 
 <h1>Description of the project</h1>
 <p>
+This Project was built with unity 2019.4.1f1
+<br>
 This space battle scene is based off the star wars game, star wars the old republic. Where the empire fights against the eternal throne.
 In this space battle, we will have the perspective of both the empires and the eternal thrones fleet.
 </p>
@@ -16,7 +18,7 @@ In this space battle, we will have the perspective of both the empires and the e
 <ol>
   <li><b>Story Board 1:</b> In the first story board we follow the empire fleet as they come out of hyperspace into the unkown regines of space looking for their emperor, who has not been seen or heard from for some time. 
 			    The camera will follow the empire fleet from behind as they exit hyperspace into the unknown regions.
-			    After the ships have exited hyperspace, the camera will pan around the lead ship as they move to their waypoints with the seek behaviour.</li>
+			    After the ships have exited hyperspace, the camera will pan around the lead ship as they move to their waypoints with the path following behaviour.</li>
 	<img src="/StoryBoard/1.png" style="width:128px;height:128px;">
 
  <li><b>Story Board 2:</b> In the second story board, The camera will switch to the other camera that will be following the eternal thrones fleet as they jump out of hyperspace in attack formationinto while being invisable.</li>
