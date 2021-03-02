@@ -22,14 +22,17 @@ In this space battle, we will have the perspective of both the empires and the e
 			    After the ships have exited hyperspace, the camera will pan around the lead ship as they move to their waypoints with the path following behaviour.</li>
 	<img src="/StoryBoard/1.png" style="width:128px;height:128px;">
 
- <li><b>Story Board 2:</b> In the second story board, The camera will switch to the other camera that will be following the eternal thrones fleet as they jump out of hyperspace in attack formationinto while being invisable.</li>
+ <li><b>Story Board 2:</b> In the second story board, The camera will switch to the other camera that will be following the eternal thrones fleet as they jump out of hyperspace in attack formation, while being invisable. 
+			   The Eternal Fleet will start to move closer towards the empires ships using the offset pursue behaviour, while still being invisable. </li>
 	<img src="/StoryBoard/2.png" style="width:128px;height:128px;">
 
- <li><b>Story Board 3:</b> In the third story board, The camera will move towards the guns of the eteranl flee as they ready to fire upon the empire fleet. .</li>
+ <li><b>Story Board 3:</b> In the third story board, The camera will move towards the guns of the eteranl fleet as they move closer towards the empires fleet. We will watch the eternal fleet ready its guns to fire upon the empires fleet.
+			   Just before the eternal fleet fires its guns, the eternal fleet will stop being invisable and we will watch as the eternal fleet fires volleys of rounds at the empires fleet.</li>
 	<img src="/StoryBoard/3.png" style="width:128px;height:128px;">
 
  <li><b>Story Board 4:</b> In the fourth story board, the camera will jump to the main hanger bay of the empire fleet as the empire fighters exit the hanger, to engage the eternal fleet. 
-			   As the camera is following the formation of fighters which will use the seek behaviour. We will get a view of the empires fleet taking and deflection the rounds of fire from the eternal fleet as we follow the fighters.</li>
+			   As the camera is following the formation of fighters which will use the seek behaviour and offset pursue behaviour. We will get a view of the empires fleet taking and deflection the rounds of fire from the eternal fleet as we follow the fighters.
+			    </li>
 	<img src="/StoryBoard/4.png" style="width:128px;height:128px;">
 
  <li><b>Story Board 5:</b> In the fifth story board, the empires fighters will get destroyed as they try to engage the eternal fleet. The camera switch to empires camera as in the last moments of desperation, the lead empires ship will turn and ram the eternal fleet hoping to cause massive damage upon them. 
