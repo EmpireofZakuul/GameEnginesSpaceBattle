@@ -17,7 +17,7 @@ In this space battle, we will have the perspective of both the empires and the e
 <h1>Story-Boards</h1>
 <p>
 <ol>
-  <li><b>Story Board 1:</b> In the first story board we follow the empire fleet as they come out of hyperspace into the unkown regines of space looking for their emperor, who has not been seen or heard from for some time. 
+  <li><b>Story Board 1:</b> In the first story board we follow the empires fleet as they come out of hyperspace into the unkown regines of space looking for their emperor, who has not been seen or heard from for some time. 
 			    The camera will follow the empire fleet from behind as they exit hyperspace into the unknown regions.
 			    After the ships have exited hyperspace, the camera will pan around the lead ship as they move to their waypoints with the path following behaviour.</li>
 	<img src="/StoryBoard/1.png" style="width:128px;height:128px;">
@@ -27,16 +27,20 @@ In this space battle, we will have the perspective of both the empires and the e
 	<img src="/StoryBoard/2.png" style="width:128px;height:128px;">
 
  <li><b>Story Board 3:</b> In the third story board, The camera will move towards the guns of the eteranl fleet as they move closer towards the empires fleet. We will watch the eternal fleet ready its guns to fire upon the empires fleet.
-			   Just before the eternal fleet fires its guns, the eternal fleet will stop being invisable and we will watch as the eternal fleet fires volleys of rounds at the empires fleet.</li>
+			   Just before the eternal fleet fires its guns, the eternal fleet will stop being invisable and we will watch as the eternal fleet fire, volleys of rounds at the empires fleet.</li>
 	<img src="/StoryBoard/3.png" style="width:128px;height:128px;">
 
- <li><b>Story Board 4:</b> In the fourth story board, the camera will jump to the main hanger bay of the empire fleet as the empire fighters exit the hanger, to engage the eternal fleet. 
-			   As the camera is following the formation of fighters which will use the seek behaviour and offset pursue behaviour. We will get a view of the empires fleet taking and deflection the rounds of fire from the eternal fleet as we follow the fighters.
+<li><b>Story Board 4:</b> In the fourth story board, the camera will jump to gun batteries of the empires fleet as the empires returns fire, to engage the eternal fleet. 
+			    </li>
+
+ <li><b>Story Board 5:</b> In the fifth story board, the camera will move to the main hanger bay of the empires fleet as the empires fighters exit the hanger, to engage the eternal fleet. 
+			   As the camera is following the formation of the fighters which will use the seek behaviour and offset pursue behaviour. We will get a view of the empires fleet taking and deflection the rounds of fire from the eternal fleet.
 			    </li>
 	<img src="/StoryBoard/4.png" style="width:128px;height:128px;">
 
- <li><b>Story Board 5:</b> In the fifth story board, the empires fighters will get destroyed as they try to engage the eternal fleet. The camera switch to empires camera as in the last moments of desperation, the lead empires ship will turn and ram the eternal fleet hoping to cause massive damage upon them. 
-			   The last scene that we will be left with is the scene of the last empire ships beging destroyed by the eternal fleet  .</li>
+ <li><b>Story Board 6:</b> In the sixth story board, the empires fighters will get destroyed as they try to engage the eternal fleet. The camera switch to empires fleet as in the last moments of desperation, the lead empires ship will turn and ram the eternal fleet hoping to cause massive damage upon them. 
+			   We will follow that empires ship from a distance as it rams the eternal fleet using the seek behaviour.The last scene that we will be left with is the scene of the last few empire ships being destroyed by the eternal fleet. 
+			   We will view this from a distance so that we can view the eternal fleet firing upon the empires fleet, and view the empires fleet being destroyed.</li>
 	<img src="/StoryBoard/5.png" style="width:128px;height:128px;">
 
   
