@@ -38,8 +38,8 @@ In this space battle, we will have the perspective of both the empires and the e
 			    </li>
 	<img src="/StoryBoard/4.png" style="width:128px;height:128px;">
 
- <li><b>Story Board 6:</b> In the sixth story board, the empires fighters will get destroyed as they try to engage the eternal fleet. The camera switch to empires fleet as in the last moments of desperation, the lead empires ship will turn and ram the eternal fleet hoping to cause massive damage upon them. 
-			   We will follow that empires ship from a distance as it rams the eternal fleet using the seek behaviour.The last scene that we will be left with is the scene of the last few empire ships being destroyed by the eternal fleet. 
+ <li><b>Story Board 6:</b> In the sixth story board, the empires fighters will get destroyed as they try to engage the eternal fleet. The camera will switch to empires fleet, as in the last moments of desperation, the lead empires ship will turn and ram the eternal fleet hoping to cause massive damage upon them. 
+			   We will follow that empires ship from a distance as it rams the eternal fleet using the seek behaviour.The last scene that we will be left with, is a scene of the last few empires ships being destroyed by the eternal fleet. 
 			   We will view this from a distance so that we can view the eternal fleet firing upon the empires fleet, and view the empires fleet being destroyed.</li>
 	<img src="/StoryBoard/5.png" style="width:128px;height:128px;">
 
