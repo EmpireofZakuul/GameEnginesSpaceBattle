@@ -4926,7 +4926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   wayPointNext: 0
-  loopedWaypoint: 0
+  loopedWaypoint: 1
 --- !u!1 &242649356
 GameObject:
   m_ObjectHideFlags: 0
