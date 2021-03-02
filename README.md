@@ -8,7 +8,8 @@
 <h1>Description of the project</h1>
 <p>
 This Project was built with unity 2019.4.1f1
-<br>
+</p>
+<p>
 This space battle scene is based off the star wars game, star wars the old republic. Where the empire fights against the eternal throne.
 In this space battle, we will have the perspective of both the empires and the eternal thrones fleet.
 </p>
