@@ -1,0 +1,2517 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8420824532512940076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532512940079}
+  m_Layer: 0
+  m_Name: GunTurret (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532512940079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532512940076}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.4999952, y: -2.5763092, z: 2.639994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533430121721}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824532527257719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532527257718}
+  m_Layer: 0
+  m_Name: GunTurret (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532527257718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532527257719}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.0899975, y: 0.06, z: -0.049995117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534416549605}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824532569749032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532569749035}
+  m_Layer: 0
+  m_Name: GunTurret (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532569749035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532569749032}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.2700024, y: -0.22000122, z: 3.0699952}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534515713840}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824532581213359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532581213358}
+  m_Layer: 0
+  m_Name: GunTurret (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532581213358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532581213359}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.1699977, y: -1.63, z: -0.05999512}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534416549605}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824532609279589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532609279588}
+  m_Layer: 0
+  m_Name: GunTurret (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532609279588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532609279589}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.009999, y: -0.070007324, z: -1.4100146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533531638246}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824532619379830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532619379833}
+  m_Layer: 0
+  m_Name: GunTurret (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532619379833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532619379830}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.4399977, y: 0.03, z: 1.9300048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534416549605}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824532627978531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532627978530}
+  m_Layer: 0
+  m_Name: GunTurret (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532627978530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532627978531}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.3299952, y: -2.5763092, z: 0.6699939}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533430121721}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824532632362584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532632362587}
+  m_Layer: 0
+  m_Name: GunTurret (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532632362587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532632362584}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.439999, y: -1.7300034, z: 0.65998536}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533531638246}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824532649693788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532649693791}
+  m_Layer: 0
+  m_Name: GunTurret (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532649693791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532649693788}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -1.4019964, y: -0.13000488, z: -1.3349938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533399602911}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824532650273117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532650273116}
+  m_Layer: 0
+  m_Name: GunTurret (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532650273116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532650273117}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.009995, y: -0.9163132, z: -1.410006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533430121721}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824532703303354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532703303357}
+  m_Layer: 0
+  m_Name: GunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532703303357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532703303354}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -2.0799963, y: -0.9163132, z: -3.0699964}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824532840522756}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824532704977068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532704977071}
+  m_Layer: 0
+  m_Name: GunTurret (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532704977071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532704977068}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.559999, y: -0.070007324, z: 2.6899853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533531638246}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824532730177278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532730177249}
+  m_Layer: 0
+  m_Name: GunTurret (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532730177249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532730177278}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.57, y: -0.9163132, z: 1.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824532840522756}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824532731732554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532731732557}
+  m_Layer: 0
+  m_Name: GunTurret (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532731732557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532731732554}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.76, y: -1.73, z: -3.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533531638246}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824532795249915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532795249914}
+  m_Layer: 0
+  m_Name: GunTurret (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532795249914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532795249915}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.0500026, y: -0.22000122, z: 1.1099951}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534515713840}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824532840522757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532840522756}
+  m_Layer: 0
+  m_Name: TopRightGunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532840522756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532840522757}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.615936, y: 8.149567, z: -2.956787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824532703303357}
+  - {fileID: 8420824534192729959}
+  - {fileID: 8420824532730177249}
+  - {fileID: 8420824534390430771}
+  - {fileID: 8420824533566000614}
+  - {fileID: 8420824533369329473}
+  - {fileID: 8420824533420214816}
+  - {fileID: 8420824533319583923}
+  m_Father: {fileID: 8420824534534441951}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824532912367765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532912367764}
+  m_Layer: 0
+  m_Name: GunTurret (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532912367764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532912367765}
+  m_LocalRotation: {x: 0, y: 0.66523033, z: 0, w: 0.7466382}
+  m_LocalPosition: {x: -3.1699982, y: -0.9163132, z: 1.8399963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534270420782}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824532962390489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532962390488}
+  m_Layer: 0
+  m_Name: GunTurret (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532962390488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532962390489}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -3.3099983, y: -0.9163132, z: 2.599994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534393525726}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824532977665275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824532977665274}
+  m_Layer: 0
+  m_Name: GunTurret (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824532977665274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824532977665275}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.5, y: -0.9163132, z: 2.69}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533430121721}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824533006481640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533006481643}
+  m_Layer: 0
+  m_Name: GunTurret (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533006481643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533006481640}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.5699992, y: -1.7300034, z: 2.6299853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533531638246}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824533047732589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533047732588}
+  m_Layer: 0
+  m_Name: GunTurret (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533047732588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533047732589}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.0100024, y: -1.8799973, z: 1.1399951}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534515713840}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824533057775484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533057775487}
+  m_Layer: 0
+  m_Name: GunTurret (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533057775487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533057775484}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -1.3999963, y: -1.7900009, z: -1.3199939}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533399602911}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533174161276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533174161279}
+  m_Layer: 0
+  m_Name: GunTurret (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533174161279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533174161276}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.2400024, y: -1.8799973, z: 3.149995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534515713840}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824533196874445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533196874444}
+  m_Layer: 0
+  m_Name: GunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533196874444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533196874445}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.7299991, y: -0.070007324, z: -3.4600146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533531638246}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824533244478482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533244478485}
+  m_Layer: 0
+  m_Name: GunTurret (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533244478485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533244478482}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -1.6599963, y: -1.7900009, z: 0.7600061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533399602911}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824533261321110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533261321113}
+  m_Layer: 0
+  m_Name: GunTurret (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533261321113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533261321110}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -1.7999976, y: -1.63, z: -2.1099951}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534416549605}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533261615305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533261615304}
+  m_Layer: 0
+  m_Name: GunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533261615304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533261615305}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.4900024, y: -0.22000122, z: -3.0000048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534515713840}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824533263646257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533263646256}
+  m_Layer: 0
+  m_Name: GunTurret (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533263646256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533263646257}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.6500015, y: -2.5763092, z: -2.2099915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534270420782}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533294811971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533294811970}
+  m_Layer: 0
+  m_Name: GunTurret (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533294811970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533294811971}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -1.7500024, y: -1.8799973, z: -0.9200049}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534515713840}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533319583920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533319583923}
+  m_Layer: 0
+  m_Name: GunTurret (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533319583923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533319583920}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.9599962, y: -2.5763092, z: 3.0600038}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824532840522756}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824533320659462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533320659465}
+  m_Layer: 0
+  m_Name: GunTurret (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533320659465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533320659462}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -3.17, y: -2.5763092, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534270420782}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824533369329502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533369329473}
+  m_Layer: 0
+  m_Name: GunTurret (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533369329473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533369329502}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.2899964, y: -2.5763092, z: -0.9799963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824532840522756}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533399602908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533399602911}
+  m_Layer: 0
+  m_Name: BottomMiddleRightGunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533399602911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533399602908}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.1440659, y: 0.48325348, z: -14.676819}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824533568112851}
+  - {fileID: 8420824532649693791}
+  - {fileID: 8420824534301993334}
+  - {fileID: 8420824533736754150}
+  - {fileID: 8420824533938979626}
+  - {fileID: 8420824533057775487}
+  - {fileID: 8420824533244478485}
+  - {fileID: 8420824533950675482}
+  m_Father: {fileID: 8420824534534441951}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824533401853795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533401853794}
+  m_Layer: 0
+  m_Name: GunTurret (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533401853794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533401853795}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.1099992, y: -1.7300034, z: -1.4100146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533531638246}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533420214817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533420214816}
+  m_Layer: 0
+  m_Name: GunTurret (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533420214816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533420214817}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.6299963, y: -2.5763092, z: 1.0600036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824532840522756}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824533430121718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533430121721}
+  m_Layer: 0
+  m_Name: TopMiddleRightGunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533430121721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533430121718}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.025932, y: 8.149567, z: -16.8768}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824533967929129}
+  - {fileID: 8420824532650273116}
+  - {fileID: 8420824533685371226}
+  - {fileID: 8420824532977665274}
+  - {fileID: 8420824534376658640}
+  - {fileID: 8420824533449884631}
+  - {fileID: 8420824532627978530}
+  - {fileID: 8420824532512940079}
+  m_Father: {fileID: 8420824534534441951}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824533449884628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533449884631}
+  m_Layer: 0
+  m_Name: GunTurret (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533449884631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533449884628}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.0199952, y: -2.5763092, z: -1.400006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533430121721}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533470674908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533470674911}
+  m_Layer: 0
+  m_Name: GunTurret (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533470674911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533470674908}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -3.1199982, y: -0.9163132, z: 0.5999939}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534393525726}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824533502808613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533502808612}
+  m_Layer: 0
+  m_Name: GunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533502808612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533502808613}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -2.519998, y: -0.9163132, z: -3.5400062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534393525726}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824533517280138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533517280141}
+  m_Layer: 0
+  m_Name: GunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533517280141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533517280138}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.5399976, y: 0.04, z: -4.1899953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534416549605}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824533531638247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533531638246}
+  m_Layer: 0
+  m_Name: 'BottomMiddleLeftGunTurret '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533531638246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533531638247}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.8740616, y: 0.48325348, z: -28.936798}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824533196874444}
+  - {fileID: 8420824532609279588}
+  - {fileID: 8420824533651060609}
+  - {fileID: 8420824532704977071}
+  - {fileID: 8420824532731732557}
+  - {fileID: 8420824533401853794}
+  - {fileID: 8420824532632362587}
+  - {fileID: 8420824533006481643}
+  m_Father: {fileID: 8420824534534441951}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824533534672389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533534672388}
+  m_Layer: 0
+  m_Name: GunTurret (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533534672388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533534672389}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -1.7899976, y: 0.01, z: -2.1099951}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534416549605}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533554558549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533554558548}
+  m_Layer: 0
+  m_Name: GunTurret (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533554558548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533554558549}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.9800034, y: -2.5763092, z: -0.16000366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534270420782}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824533566000615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533566000614}
+  m_Layer: 0
+  m_Name: GunTurret (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533566000614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533566000615}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -2.04, y: -2.5763092, z: -3.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824532840522756}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824533568112848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533568112851}
+  m_Layer: 0
+  m_Name: GunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533568112851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533568112848}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.1489964, y: -0.13000488, z: -3.3849938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533399602911}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824533651060638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533651060609}
+  m_Layer: 0
+  m_Name: GunTurret (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533651060609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533651060638}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.309999, y: -0.070007324, z: 0.6999853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533531638246}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824533685371227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533685371226}
+  m_Layer: 0
+  m_Name: GunTurret (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533685371226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533685371227}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -2.2899952, y: -0.9163132, z: 0.6999939}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533430121721}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824533718514592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533718514595}
+  m_Layer: 0
+  m_Name: GunTurret (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533718514595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533718514592}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -1.7000024, y: -0.22000122, z: -0.8700049}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534515713840}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533736754151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533736754150}
+  m_Layer: 0
+  m_Name: GunTurret (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533736754150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533736754151}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -1.9469963, y: -0.13000488, z: 2.7640061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533399602911}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824533777718006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533777718009}
+  m_Layer: 0
+  m_Name: GunTurret (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533777718009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533777718006}
+  m_LocalRotation: {x: 0, y: 0.66523033, z: 0, w: 0.7466382}
+  m_LocalPosition: {x: -2.6500015, y: -0.9163132, z: -2.2099915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534270420782}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533836661920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533836661923}
+  m_Layer: 0
+  m_Name: GunTurret (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533836661923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533836661920}
+  m_LocalRotation: {x: 0, y: 0.66523033, z: 0, w: 0.7466382}
+  m_LocalPosition: {x: -2.9800034, y: -0.9163132, z: -0.16000366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534270420782}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824533850576820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533850576823}
+  m_Layer: 0
+  m_Name: GunTurret (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533850576823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533850576820}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.3599975, y: -1.7, z: 1.9400048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534416549605}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824533938979627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533938979626}
+  m_Layer: 0
+  m_Name: GunTurret (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533938979626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533938979627}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.1199963, y: -1.7900009, z: -3.399994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533399602911}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824533950675483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533950675482}
+  m_Layer: 0
+  m_Name: GunTurret (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533950675482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533950675483}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -1.95, y: -1.79, z: 2.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533399602911}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824533967929126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533967929129}
+  m_Layer: 0
+  m_Name: GunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533967929129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533967929126}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.7899952, y: -0.9163132, z: -3.460006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533430121721}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824533977138673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824533977138672}
+  m_Layer: 0
+  m_Name: GunTurret (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824533977138672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824533977138673}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.45, y: -1.88, z: -3.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534515713840}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824534082549040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534082549043}
+  m_Layer: 0
+  m_Name: GunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534082549043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534082549040}
+  m_LocalRotation: {x: 0, y: 0.66523033, z: 0, w: 0.7466382}
+  m_LocalPosition: {x: -2.3899994, y: -0.9163132, z: -4.289978}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534270420782}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824534192729956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534192729959}
+  m_Layer: 0
+  m_Name: GunTurret (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534192729959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534192729956}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.2999964, y: -0.9163132, z: -0.93999636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824532840522756}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824534194976183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534194976182}
+  m_Layer: 0
+  m_Name: GunTurret (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534194976182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534194976183}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -2.3899994, y: -2.5763092, z: -4.289978}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534270420782}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824534205317358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534205317329}
+  m_Layer: 0
+  m_Name: GunTurret (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534205317329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534205317358}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -3.2999983, y: -2.5763092, z: 2.549994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534393525726}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824534217881090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534217881092}
+  - component: {fileID: 8420824534217881093}
+  - component: {fileID: 8420824534217881095}
+  - component: {fileID: 4489797290950419073}
+  m_Layer: 0
+  m_Name: EmpireShip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534217881092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534217881090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37, y: -110, z: 374}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824534534441951}
+  - {fileID: 8310968913387194599}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8420824534217881093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534217881090}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6968fd4d88c7f40bc133740e08f365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipVelocity: {x: 0, y: 0, z: 0}
+  shipSpeed: 0
+  shipAcceleration: {x: 0, y: 0, z: 0}
+  shipForce: {x: 0, y: 0, z: 0}
+  maxSpeed: 70
+  maxForce: 40
+  shipsMass: 1
+  shipSlowingDistance: 200
+  points: {fileID: 0}
+  pathFollowingEnabled: 1
+  waypointAmount: 6
+  shipBanking: 0.01
+  damping: 0.3
+--- !u!114 &8420824534217881095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534217881090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3fcefb70e9dd349b01cfcbb3a623e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 15
+  projectile: {fileID: 7370690413418456085, guid: 0ddb2a21835aa034489bf68e7d48c04e,
+    type: 3}
+  bulletSpawn: {fileID: 8420824534082549043}
+  speed: 50
+--- !u!82 &4489797290950419073
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534217881090}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &8420824534232806711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534232806710}
+  m_Layer: 0
+  m_Name: GunTurret (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534232806710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534232806711}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -3.12, y: -2.5763092, z: 0.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534393525726}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824534270420783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534270420782}
+  m_Layer: 0
+  m_Name: TopLeftGunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534270420782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534270420783}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.2998657, y: 8.149567, z: -44.668945}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824534082549043}
+  - {fileID: 8420824533777718009}
+  - {fileID: 8420824533836661923}
+  - {fileID: 8420824532912367764}
+  - {fileID: 8420824534194976182}
+  - {fileID: 8420824533263646256}
+  - {fileID: 8420824533554558548}
+  - {fileID: 8420824533320659465}
+  m_Father: {fileID: 8420824534534441951}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824534301993335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534301993334}
+  m_Layer: 0
+  m_Name: GunTurret (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534301993334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534301993335}
+  m_LocalRotation: {x: -0, y: 0.66261995, z: -0, w: 0.7489558}
+  m_LocalPosition: {x: -1.6489964, y: -0.13000488, z: 0.7860061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533399602911}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 83, z: 0}
+--- !u!1 &8420824534341283464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534341283467}
+  m_Layer: 0
+  m_Name: GunTurret (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534341283467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534341283464}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.7799983, y: -2.5763092, z: -1.4800061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534393525726}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824534357687868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534357687871}
+  m_Layer: 0
+  m_Name: GunTurret (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534357687871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534357687868}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -2.519998, y: -2.5763092, z: -3.5500062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534393525726}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824534376658641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534376658640}
+  m_Layer: 0
+  m_Name: GunTurret (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534376658640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534376658641}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.8499951, y: -2.5763092, z: -3.4800062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824533430121721}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1 &8420824534390430768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534390430771}
+  m_Layer: 0
+  m_Name: GunTurret (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534390430771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534390430768}
+  m_LocalRotation: {x: -0, y: 0.6632733, z: -0, w: 0.74837726}
+  m_LocalPosition: {x: -2.92, y: -0.9163132, z: 3.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824532840522756}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 83.1, z: 0}
+--- !u!1 &8420824534393525727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534393525726}
+  m_Layer: 0
+  m_Name: TopMiddleLeftGunTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534393525726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534393525727}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.295937, y: 8.149567, z: -31.13678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824533502808612}
+  - {fileID: 8420824534478322926}
+  - {fileID: 8420824533470674911}
+  - {fileID: 8420824532962390488}
+  - {fileID: 8420824534357687871}
+  - {fileID: 8420824534341283467}
+  - {fileID: 8420824534232806710}
+  - {fileID: 8420824534205317329}
+  m_Father: {fileID: 8420824534534441951}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824534416549602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534416549605}
+  m_Layer: 0
+  m_Name: 'BottomLeftGunTurret '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534416549605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534416549602}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.8701324, y: 0.48325348, z: -42.468964}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824533517280141}
+  - {fileID: 8420824533534672388}
+  - {fileID: 8420824532527257718}
+  - {fileID: 8420824532619379833}
+  - {fileID: 8420824534599844458}
+  - {fileID: 8420824533261321113}
+  - {fileID: 8420824532581213358}
+  - {fileID: 8420824533850576823}
+  m_Father: {fileID: 8420824534534441951}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824534478322927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534478322926}
+  m_Layer: 0
+  m_Name: GunTurret (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534478322926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534478322927}
+  m_LocalRotation: {x: -0, y: 0.66523033, z: -0, w: 0.7466382}
+  m_LocalPosition: {x: -2.7799983, y: -0.9163132, z: -1.4900061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534393525726}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 83.4, z: 0}
+--- !u!1 &8420824534515713841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534515713840}
+  m_Layer: 0
+  m_Name: 'BottomRightGunTurret '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534515713840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534515713841}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5540619, y: 0.48325348, z: -0.7568054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824533261615304}
+  - {fileID: 8420824533718514595}
+  - {fileID: 8420824532795249914}
+  - {fileID: 8420824532569749035}
+  - {fileID: 8420824533977138672}
+  - {fileID: 8420824533294811970}
+  - {fileID: 8420824533047732588}
+  - {fileID: 8420824533174161279}
+  m_Father: {fileID: 8420824534534441951}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824534534441948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534534441951}
+  m_Layer: 0
+  m_Name: GunTurretEmpties
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534534441951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534534441948}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 53.965935, y: 21.216743, z: 4.086792}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8420824534270420782}
+  - {fileID: 8420824534393525726}
+  - {fileID: 8420824533430121721}
+  - {fileID: 8420824532840522756}
+  - {fileID: 8420824534416549605}
+  - {fileID: 8420824533531638246}
+  - {fileID: 8420824533399602911}
+  - {fileID: 8420824534515713840}
+  m_Father: {fileID: 8420824534217881092}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8420824534599844459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8420824534599844458}
+  m_Layer: 0
+  m_Name: GunTurret (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8420824534599844458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534599844459}
+  m_LocalRotation: {x: -0, y: 0.6665324, z: -0, w: 0.74547607}
+  m_LocalPosition: {x: -1.54, y: -1.67, z: -4.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8420824534416549605}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 83.6, z: 0}
+--- !u!1001 &8420824532566109964
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8420824534217881092}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 19af7d77b2d7c0a4eaa8066d8b8fa6a5, type: 2}
+    - target: {fileID: 919132149155446097, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Name
+      value: Harrower
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a23d281ff8c5524cad0355cf9d08356, type: 3}
+--- !u!4 &8310968913387194599 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+    type: 3}
+  m_PrefabInstance: {fileID: 8420824532566109964}
+  m_PrefabAsset: {fileID: 0}
