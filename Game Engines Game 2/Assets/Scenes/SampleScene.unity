@@ -9891,7 +9891,7 @@ MonoBehaviour:
   ship: {fileID: 8827708781095067783, guid: c150c70b839c2b945805f34f507a8fbb, type: 3}
   shipParent: {fileID: 242649357}
   shipStartPos: {fileID: 596465817}
-  numberOfRows: 6
+  numberOfRows: 3
   numberOfColumns: 12
   numberOfBobjectsPerRow: 1
   amountOfSpaceBetweenObject: 340
@@ -14717,7 +14717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707964449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26, y: 0, z: 4946}
+  m_LocalPosition: {x: -26, y: 0, z: 7705}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95684661}
@@ -14853,10 +14853,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1920855217}
-  smoothSpeed: 0.2
+  newTargetObject: {fileID: 242649357}
+  changeTargetTime: 18
+  smoothSpeed: 10
+  smoothSpeedCameraPan: 0.2
   cameraOffset: {x: 0, y: 0, z: -834}
   cameraOffsetNew: {x: 120, y: 42, z: 416.2}
   ShipMovement: {fileID: 1920855216}
+  changeTarget: 0
+  firstCamera: {fileID: 963194227}
+  secondCamera: {fileID: 1195447622}
 --- !u!1 &972115963
 GameObject:
   m_ObjectHideFlags: 0
@@ -24472,7 +24478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1195447621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24554,13 +24560,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195447620}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -129257, y: 236.3125, z: 82968}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 11031, y: 788, z: 9001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1383258351
 GameObject:
   m_ObjectHideFlags: 0
