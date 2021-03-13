@@ -1844,6 +1844,7 @@ GameObject:
   - component: {fileID: 8420824534217881093}
   - component: {fileID: 8420824534217881095}
   - component: {fileID: 4489797290950419073}
+  - component: {fileID: 2926679363340406749}
   m_Layer: 0
   m_Name: EmpireShip
   m_TagString: Untagged
@@ -2005,6 +2006,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &2926679363340406749
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534217881090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 290.67126, y: 105.77272, z: 562.4421}
+  m_Center: {x: -0.5860596, y: 15.627571, z: 91.52072}
 --- !u!1 &8420824534232806711
 GameObject:
   m_ObjectHideFlags: 0

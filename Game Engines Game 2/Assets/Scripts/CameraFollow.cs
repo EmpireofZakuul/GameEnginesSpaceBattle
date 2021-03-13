@@ -37,6 +37,7 @@ public class CameraFollow : MonoBehaviour
     public float smoothSpeedCameraPan = 10f;
     public Vector3 cameraOffset;
     public Vector3 cameraOffsetNew;
+    public Vector3 finalCameraOffset;
     public ShipMovement ShipMovement;
     public bool changeTarget = false;
 
@@ -78,14 +79,9 @@ public class CameraFollow : MonoBehaviour
         }
 
 
-        // do another if statement, same code as above but with different vectors
        
-            //Invoke("LookAtEternalFleet", changeTargetTime);
-
-       // if(transform.position == cameraOffsetNew)
-        //{
-
-        //}
+       //Invoke("LookAtEternalFleet", changeTargetTime);
+        
 
     }
     

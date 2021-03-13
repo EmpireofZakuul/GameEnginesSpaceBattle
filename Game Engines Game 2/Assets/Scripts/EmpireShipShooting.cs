@@ -8,25 +8,42 @@ public class EmpireShipShooting : MonoBehaviour
     private float nextTimeToFire = 0f;
     public GameObject projectile;
     public Transform bulletSpawn;
-    //public GameObject[] spawnBullet;
     public float speed = 20;
-    // Start is called before the first frame update
+    ObjectPool objectPooler;
+   
+    
+
+
     void Start()
     {
-        
+        objectPooler = ObjectPool.Instance;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)//testing 
+        /* if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)//testing 
+         {
+             nextTimeToFire = Time.time + 1 / fireRate;
+             Shoot();
+         }
+        */
+
+        nextTimeToFire += Time.deltaTime;
+        if (nextTimeToFire >= fireRate)//testing 
         {
-            nextTimeToFire = Time.time + 1 / fireRate;
+            nextTimeToFire = 0;
             Shoot();
         }
     }
 
     public void Shoot()
+    {
+        objectPooler.SpawnFromPool("Bullet", bulletSpawn.position, bulletSpawn.rotation);
+       
+    }
+
+    /*public void Shoot()
     {
        
         GameObject bullet = Instantiate(projectile);
@@ -38,4 +55,6 @@ public class EmpireShipShooting : MonoBehaviour
 
 
     }
+    */
 }
+
