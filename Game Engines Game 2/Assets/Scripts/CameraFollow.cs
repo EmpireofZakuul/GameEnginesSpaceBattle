@@ -53,33 +53,37 @@ public class CameraFollow : MonoBehaviour
     void LateUpdate()
     {
         //transform.position = targetObject.position + cameraOffset;
-        if (ShipMovement.shipSpeed != 0 )
+        if (ShipMovement.shipSpeed != 0)
         {
             Vector3 desiredCameraPosition = targetObject.position + cameraOffset;
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredCameraPosition, smoothSpeed * Time.deltaTime);
             transform.position = smoothedPosition;
-           
-            
-                transform.LookAt(targetObject);
-            
+
+
+            transform.LookAt(targetObject);
+
         }
 
-        else if (ShipMovement.shipSpeed == 0 )
+        else if (ShipMovement.shipSpeed <= 2)
         {
             Vector3 newDesiredCameraPosition = targetObject.position + cameraOffsetNew;
             Vector3 newCameraPosition = Vector3.Lerp(transform.position, newDesiredCameraPosition, smoothSpeedCameraPan * Time.deltaTime);
             transform.position = newCameraPosition;
-    
-            
-                transform.LookAt(targetObject);
-            
-            
+
+
+            transform.LookAt(targetObject);
+
+
             changeTarget = true;
 
         }
 
 
-       
+        if (transform.position.x >= 74 && transform.position.y >= 45 && transform.position.z >= 8365 && changeTarget)
+        {
+            transform.Rotate(1.279f, -101.471f, 0f);
+            Invoke("LookAtEternalFleet", changeTargetTime);
+        }
        //Invoke("LookAtEternalFleet", changeTargetTime);
         
 
