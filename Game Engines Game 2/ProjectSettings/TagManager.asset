@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - LeadShip
+  - Enemy
   layers:
   - Default
   - TransparentFX

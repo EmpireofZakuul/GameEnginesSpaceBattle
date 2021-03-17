@@ -4934,10 +4934,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2926679363340406749, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8420824534217881090, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: m_Name
       value: EmpireShip (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881090, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8420824534217881092, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
@@ -5010,6 +5020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 242649357}
+  - component: {fileID: 242649358}
   m_Layer: 0
   m_Name: ShipHolder
   m_TagString: Untagged
@@ -5024,13 +5035,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242649356}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 5021, y: -37.6, z: 6036}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 19966, y: 511, z: 8011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &242649358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242649356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edcd093220856c640a07e79782fa7e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipVelocity: {x: 0, y: 0, z: 0}
+  shipSpeed: 0
+  shipAcceleration: {x: 0, y: 0, z: 0}
+  shipForce: {x: 0, y: 0, z: 0}
+  maxSpeed: 70
+  maxForce: 20
+  shipsMass: 1
+  shipSlowingDistance: 80
+  damping: 0
 --- !u!1 &269700423
 GameObject:
   m_ObjectHideFlags: 0
@@ -9797,6 +9829,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EmpireShip (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881090, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8420824534217881092, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9907,7 +9944,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &575658900
 GameObject:
@@ -14687,7 +14724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596465816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11175, y: 800, z: 13764}
+  m_LocalPosition: {x: 19966, y: 511, z: 8011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14876,7 +14913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972115963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28, y: 0, z: 2340}
+  m_LocalPosition: {x: -13, y: 0, z: 2340}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95684661}
@@ -24444,7 +24481,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174521017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -134, y: 0, z: 3688}
+  m_LocalPosition: {x: -323, y: 0, z: 3688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95684661}
@@ -24461,6 +24498,7 @@ GameObject:
   - component: {fileID: 1195447623}
   - component: {fileID: 1195447622}
   - component: {fileID: 1195447621}
+  - component: {fileID: 1195447624}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -24522,9 +24560,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 0.01
+  far clip plane: 3000
+  field of view: 75
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -24550,12 +24588,20 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195447620}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 11031, y: 788, z: 9001}
+  m_LocalPosition: {x: 25544, y: 502, z: 7791}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!81 &1195447624
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195447620}
+  m_Enabled: 1
 --- !u!1 &1383258351
 GameObject:
   m_ObjectHideFlags: 0
@@ -24759,7 +24805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627447018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -133, y: 0, z: 3074}
+  m_LocalPosition: {x: -152, y: 0, z: 3074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95684661}
@@ -24807,10 +24853,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2926679363340406749, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8420824534217881090, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: m_Name
       value: EmpireShip (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881090, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8420824534217881092, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
@@ -24903,6 +24959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EmpireShip (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881090, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8420824534217881092, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
