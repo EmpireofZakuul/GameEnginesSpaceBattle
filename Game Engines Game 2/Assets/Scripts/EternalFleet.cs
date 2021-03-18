@@ -18,6 +18,9 @@ public class EternalFleet : MonoBehaviour
 
     public float damping = 0.1f;
 
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +31,12 @@ public class EternalFleet : MonoBehaviour
     void Update()
     {
     
-        shipAcceleration = shipForce / shipsMass;
+        /*shipAcceleration = shipForce / shipsMass;
         shipVelocity = shipVelocity + shipAcceleration * Time.deltaTime;
         transform.position = transform.position + shipVelocity * Time.deltaTime;
         shipSpeed = shipVelocity.magnitude;
+        */
+
         
     }
     

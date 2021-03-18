@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +15,9 @@ public class EternalFleetFire : MonoBehaviour
     private float nextTimeToFire = 0f;
     public GameObject projectile;
     public Transform bulletSpawn;
+    public Transform bulletSpawn2;
+    public Transform bulletSpawn3;
+    public Transform bulletSpawn4;
     public float speed = 20;
 
 
@@ -40,14 +44,16 @@ public class EternalFleetFire : MonoBehaviour
             if (hit.collider.gameObject.tag == "Enemy")
             {
                 Debug.Log(hit.point);
-                WeaponFirePosition();
                 targetFound = false;
+                //transform.Rotate.y = hit.point;
             }
 
         }
         if (!targetFound)
         {
-            WeaponFirePosition();
+            //transform.rotation =  Quaternion.Euler(0, hit.point, 0);
+           //transform.localEulerAngles = new Vector3(0, hit.point, 0);
+            targetFound = true;
         }
 
         if (targetFound)
@@ -56,17 +62,29 @@ public class EternalFleetFire : MonoBehaviour
             if (nextTimeToFire >= fireRate)//testing 
             {
                 nextTimeToFire = 0;
-                Fire();
+                StartCoroutine(Fire());
             }
         }
         
     }
-    public void WeaponFirePosition()
-    {
 
-    }
-    public void Fire()
+
+    public IEnumerator Fire()
     {
         objectPooler.SpawnFromPool("Bullet", bulletSpawn.position, bulletSpawn.rotation);
+
+        yield return new WaitForSeconds(1.5f);
+
+        objectPooler.SpawnFromPool("Bullet", bulletSpawn2.position, bulletSpawn.rotation);
+
+        yield return new WaitForSeconds(1.5f);
+
+        objectPooler.SpawnFromPool("Bullet", bulletSpawn3.position, bulletSpawn.rotation);
+
+        yield return new WaitForSeconds(1.5f);
+
+        objectPooler.SpawnFromPool("Bullet", bulletSpawn4.position, bulletSpawn.rotation);
+
+        yield return new WaitForSeconds(1.5f);
     }
 }

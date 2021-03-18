@@ -114,6 +114,9 @@ MonoBehaviour:
   projectile: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
     type: 3}
   bulletSpawn: {fileID: 5482650783891967026}
+  bulletSpawn2: {fileID: 8079613632015379294}
+  bulletSpawn3: {fileID: 5313559506524372279}
+  bulletSpawn4: {fileID: 4996445966534563341}
   speed: 50
 --- !u!1 &5923550552472337836
 GameObject:
@@ -384,6 +387,9 @@ MonoBehaviour:
   projectile: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
     type: 3}
   bulletSpawn: {fileID: 5482650783891967026}
+  bulletSpawn2: {fileID: 0}
+  bulletSpawn3: {fileID: 0}
+  bulletSpawn4: {fileID: 0}
   speed: 50
 --- !u!1 &8540101065834231048
 GameObject:
