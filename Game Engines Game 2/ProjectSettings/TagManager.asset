@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LeadShip
   - Enemy
+  - EternalEnemy
   layers:
   - Default
   - TransparentFX

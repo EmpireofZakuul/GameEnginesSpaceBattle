@@ -108,9 +108,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensorRay: {fileID: 1041144280943017294}
+  gunPosition: {fileID: 0}
   RayDist: 10000
   targetFound: 0
-  fireRate: 1
+  GunsRotated: 0
+  GunFiringLoop: 0
+  fireRate: 4
   projectile: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
     type: 3}
   bulletSpawn: {fileID: 5482650783891967026}
@@ -331,10 +334,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8827708781095067783}
   - component: {fileID: 7302599934921541772}
-  - component: {fileID: 1135588081121274097}
   m_Layer: 0
   m_Name: Eternal Fleet
-  m_TagString: Untagged
+  m_TagString: EternalEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,29 +370,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 294.4961, y: 158.19353, z: 322.47446}
   m_Center: {x: 95.48926, y: 0.1517334, z: -11.324921}
---- !u!114 &1135588081121274097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8199228572086630973}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f793125eb77444f81c369a372de3e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensorRay: {fileID: 3130188115941139034}
-  RayDist: 40
-  targetFound: 0
-  fireRate: 1
-  projectile: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
-    type: 3}
-  bulletSpawn: {fileID: 5482650783891967026}
-  bulletSpawn2: {fileID: 0}
-  bulletSpawn3: {fileID: 0}
-  bulletSpawn4: {fileID: 0}
-  speed: 50
 --- !u!1 &8540101065834231048
 GameObject:
   m_ObjectHideFlags: 0
