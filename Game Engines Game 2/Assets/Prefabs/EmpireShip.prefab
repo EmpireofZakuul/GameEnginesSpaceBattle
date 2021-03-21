@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2591520237922062902}
   - component: {fileID: 2627066326915207149}
   - component: {fileID: 903498918377446392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SensorArray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532512940079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532527257718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532569749035}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532581213358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532609279588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532619379833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532627978530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532632362587}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532649693791}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532650273116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532703303357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532704977071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532730177249}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532731732557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532795249914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532840522756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TopRightGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532912367764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532962390488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824532977665274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533006481643}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -770,7 +770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533047732588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533057775487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -830,7 +830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533174161279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -860,7 +860,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533196874444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -890,7 +890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533244478485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,7 +920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533261321113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -950,7 +950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533261615304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -980,7 +980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533263646256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,7 +1010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533294811970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,7 +1040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533319583923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1070,7 +1070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533320659465}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1100,7 +1100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533369329473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1130,7 +1130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533399602911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BottomMiddleRightGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1168,7 +1168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533401853794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1198,7 +1198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533420214816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,7 +1228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533430121721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TopMiddleRightGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1266,7 +1266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533449884631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1296,7 +1296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533470674911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533502808612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1356,7 +1356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533517280141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533531638246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'BottomMiddleLeftGunTurret '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1424,7 +1424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533534672388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533554558548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1484,7 +1484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533566000614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,7 +1514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533568112851}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533651060609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1574,7 +1574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533685371226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1604,7 +1604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533718514595}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,7 +1634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533736754150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1664,7 +1664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533777718009}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1694,7 +1694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533836661923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1724,7 +1724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533850576823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1754,7 +1754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533938979626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1784,7 +1784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533950675482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1814,7 +1814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533967929129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1844,7 +1844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824533977138672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534082549043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1904,7 +1904,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534192729959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1934,7 +1934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534194976182}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1964,7 +1964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534205317329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1997,7 +1997,7 @@ GameObject:
   - component: {fileID: 8420824534217881093}
   - component: {fileID: 4489797290950419073}
   - component: {fileID: 2926679363340406749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EmpireShip
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2150,7 +2150,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8420824534217881090}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 290.67126, y: 105.77272, z: 562.4421}
@@ -2164,7 +2164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534232806710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2194,7 +2194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534270420782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TopLeftGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2232,7 +2232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534301993334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2262,7 +2262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534341283467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2292,7 +2292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534357687871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2322,7 +2322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534376658640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2352,7 +2352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534390430771}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2382,7 +2382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534393525726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TopMiddleLeftGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2420,7 +2420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534416549605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'BottomLeftGunTurret '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2458,7 +2458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534478322926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2488,7 +2488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534515713840}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'BottomRightGunTurret '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2526,7 +2526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534534441951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurretEmpties
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2564,7 +2564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420824534599844458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurret (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2743,15 +2743,95 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6763858364670572316, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6733177361254619370, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: 19af7d77b2d7c0a4eaa8066d8b8fa6a5, type: 2}
+    - target: {fileID: -2045257923548263128, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1599826595754709761, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -466329591000292508, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -208595431880416365, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Name
       value: Harrower
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009987137999418058, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a23d281ff8c5524cad0355cf9d08356, type: 3}

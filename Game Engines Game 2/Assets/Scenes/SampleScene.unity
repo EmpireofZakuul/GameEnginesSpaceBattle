@@ -24934,7 +24934,7 @@ PrefabInstance:
     - target: {fileID: 2926679363340406749, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8420824534217881090, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
@@ -25153,7 +25153,11 @@ MonoBehaviour:
   - tag: Bullet
     prefab: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
       type: 3}
-    size: 400
+    size: 300
+  - tag: Explosions
+    prefab: {fileID: 3675263091104240395, guid: 1d95ca44b1b55c64391d672bce065516,
+      type: 3}
+    size: 5
 --- !u!4 &2016663686
 Transform:
   m_ObjectHideFlags: 0

@@ -51,12 +51,25 @@ public class ObjectPool : MonoBehaviour
             return null;
         }
         GameObject objectToSpawn = poolDictionary[tag].Dequeue();
+
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = position;
         objectToSpawn.transform.rotation = rotation;
 
-        poolDictionary[tag].Enqueue(objectToSpawn);
 
+        poolDictionary[tag].Enqueue(objectToSpawn);
+        //objectToSpawn.SetActive(false);
         return objectToSpawn;
+        
     }
+
+    //public void ReturnToPool(GameObject objectToSpawn)
+    //{
+       // objectToSpawn.gameObject.SetActive(false);
+       // poolDictionary[tag].Enqueue(objectToSpawn);
+    //}
 }
+
+       
+
+
