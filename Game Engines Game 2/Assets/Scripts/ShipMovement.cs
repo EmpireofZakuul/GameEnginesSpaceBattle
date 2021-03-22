@@ -13,9 +13,9 @@ public class ShipMovement : MonoBehaviour
 
     public float shipsMass = 1;
 
-   // public bool seekEnabled = true;
-   // public Transform seekTargetTransform;
-   // public Vector3 seekTarget;
+    public bool seekEnabled = true;
+    public Transform seekTargetTransform;
+    public Vector3 seekTarget;
 
     public float shipSlowingDistance = 80;
     public WayPoints points;
@@ -79,15 +79,15 @@ public class ShipMovement : MonoBehaviour
     public Vector3 CalculateForce()
     {
         Vector3 d = Vector3.zero;
-        /*if (seekEnabled)
+        if (seekEnabled)
         {
             if (seekTargetTransform != null)
             {
                 seekTarget = seekTargetTransform.position;
             }
-            f += Seek(seekTarget);
+            d += Seek(seekTarget);
         }
-        */
+        
        
 
         if (pathFollowingEnabled)
@@ -113,9 +113,17 @@ public class ShipMovement : MonoBehaviour
        
             shipVelocity -= (damping * shipVelocity * Time.deltaTime);
         }
-        else
+        else if(!seekEnabled)
         {
             shipSpeed = 0;
+        }
+
+        if (seekEnabled)
+        {
+            Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (shipAcceleration * shipBanking), Time.deltaTime * 3.0f);
+            transform.LookAt(transform.position + shipVelocity, tempUp);
+
+            shipVelocity -= (damping * shipVelocity * Time.deltaTime);
         }
 
         

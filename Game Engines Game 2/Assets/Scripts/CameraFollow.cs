@@ -75,10 +75,10 @@ public class CameraFollow : MonoBehaviour
 
 
             changeTarget = true;
-
+            Invoke("LookAtEternalFleet", changeTargetTime);
         }
 
-
+/*
         if (transform.position.x >= 74 && transform.position.y >= 45 && transform.position.z >= 8365 && changeTarget)
         {
             transform.Rotate(1.279f, -101.471f, 0f);
@@ -86,7 +86,7 @@ public class CameraFollow : MonoBehaviour
         }
        //Invoke("LookAtEternalFleet", changeTargetTime);
         
-
+        */
     }
     
     void LookAtEternalFleet()

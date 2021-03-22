@@ -5009,6 +5009,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekTargetTransform
+      value: 
+      objectReference: {fileID: 242649357}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803f8e5e43920b549991fafd92125200, type: 3}
 --- !u!1 &242649356
@@ -9904,6 +9914,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekTargetTransform
+      value: 
+      objectReference: {fileID: 242649357}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803f8e5e43920b549991fafd92125200, type: 3}
 --- !u!1 &481171948
@@ -24700,7 +24720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1920855217}
   newTargetObject: {fileID: 242649357}
-  changeTargetTime: 10
+  changeTargetTime: 20
   smoothSpeed: 20
   smoothSpeedCameraPan: 0.2
   cameraOffset: {x: 0, y: 0, z: -834}
@@ -25011,6 +25031,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekTargetTransform
+      value: 
+      objectReference: {fileID: 242649357}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803f8e5e43920b549991fafd92125200, type: 3}
 --- !u!114 &1920855216 stripped
@@ -25118,6 +25148,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekTargetTransform
+      value: 
+      objectReference: {fileID: 242649357}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803f8e5e43920b549991fafd92125200, type: 3}
 --- !u!1 &2016663684
@@ -25319,5 +25359,15 @@ PrefabInstance:
       propertyPath: points
       value: 
       objectReference: {fileID: 95684662}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekTargetTransform
+      value: 
+      objectReference: {fileID: 242649357}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: seekEnabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803f8e5e43920b549991fafd92125200, type: 3}

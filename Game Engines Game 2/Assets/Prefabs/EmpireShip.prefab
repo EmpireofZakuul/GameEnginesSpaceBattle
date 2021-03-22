@@ -1995,8 +1995,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8420824534217881092}
   - component: {fileID: 8420824534217881093}
+  - component: {fileID: 340425860661170951}
   - component: {fileID: 4489797290950419073}
   - component: {fileID: 2926679363340406749}
+  - component: {fileID: 1167311834294291423}
   m_Layer: 8
   m_Name: EmpireShip
   m_TagString: Enemy
@@ -2040,12 +2042,30 @@ MonoBehaviour:
   maxSpeed: 70
   maxForce: 40
   shipsMass: 1
+  seekEnabled: 1
+  seekTargetTransform: {fileID: 0}
+  seekTarget: {x: 0, y: 0, z: 0}
   shipSlowingDistance: 200
   points: {fileID: 0}
   pathFollowingEnabled: 1
   waypointAmount: 6
   shipBanking: 0.01
   damping: 0.3
+--- !u!114 &340425860661170951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534217881090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930a9ccfdc30de941a5cb92eaacdc153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
+  explode: 0
 --- !u!82 &4489797290950419073
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2153,8 +2173,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 290.67126, y: 105.77272, z: 562.4421}
-  m_Center: {x: -0.5860596, y: 15.627571, z: 91.52072}
+  m_Size: {x: 297.99634, y: 52.498245, z: 561.79846}
+  m_Center: {x: -4.248596, y: -11.009666, z: 91.19891}
+--- !u!65 &1167311834294291423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420824534217881090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 53.751213, y: 57.340256, z: 347.52618}
+  m_Center: {x: -0.43547058, y: 43.37365, z: -36.618248}
 --- !u!1 &8420824534232806711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,15 +2868,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a23d281ff8c5524cad0355cf9d08356, type: 3}
---- !u!1 &8655266052092088925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a23d281ff8c5524cad0355cf9d08356,
-    type: 3}
-  m_PrefabInstance: {fileID: 8420824532566109964}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8310968913387194599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4a23d281ff8c5524cad0355cf9d08356,
+    type: 3}
+  m_PrefabInstance: {fileID: 8420824532566109964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8655266052092088925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a23d281ff8c5524cad0355cf9d08356,
     type: 3}
   m_PrefabInstance: {fileID: 8420824532566109964}
   m_PrefabAsset: {fileID: 0}

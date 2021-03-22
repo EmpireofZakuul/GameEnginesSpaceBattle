@@ -46,7 +46,7 @@ public class EmpireShipShooting : MonoBehaviour
 
         if (Physics.Raycast(this.transform.position, Vector3.right, out hit, RayDist))
         {
-            Debug.Log("casting ray");
+            
 
             if (hit.collider.gameObject.tag == "EternalEnemy")
             {

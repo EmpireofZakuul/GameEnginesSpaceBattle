@@ -47,7 +47,7 @@ public class EternalFleetFire : MonoBehaviour
 
         if (Physics.Raycast(this.transform.position, Vector3.left , out hit, RayDist))
         {
-            Debug.Log("casting ray");
+           
             
             if (hit.collider.gameObject.tag == "Enemy")
             {

@@ -24,7 +24,7 @@ public class BulletHit : MonoBehaviour
     { 
         if (other.gameObject.tag == "Enemy")
         {
-            Instantiate(effect, transform.position, transform.rotation);
+            //Instantiate(effect, transform.position, transform.rotation);
             objectPooler.SpawnFromPool("Explosions", transform.position, transform.rotation);
             //objectPooler.ReturnToPool();
             part.SetActive(false);
