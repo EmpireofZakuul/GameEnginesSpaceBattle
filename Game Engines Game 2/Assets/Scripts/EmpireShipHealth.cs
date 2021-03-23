@@ -8,7 +8,7 @@ public class EmpireShipHealth : MonoBehaviour
     public int maxHealth = 100;
     public int health;
     public bool explode = false;
-    //public Transform effect;
+    public Transform effect;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class EmpireShipHealth : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
         {
-            TakeDamage(20);
+            TakeDamage(7);
         }
     }
 
@@ -39,7 +39,8 @@ public class EmpireShipHealth : MonoBehaviour
 
     public void Dead()
     {
-      //  Instantiate(effect, transform.position, transform.rotation);
+        Instantiate(effect, transform.position, transform.rotation);
+
         Destroy(gameObject, 1f);
     }
 }

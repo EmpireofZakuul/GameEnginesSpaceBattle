@@ -41,7 +41,7 @@ public class EmpireShipShooting : MonoBehaviour
     {
        
 
-        Debug.DrawRay(this.transform.position, Vector3.right * 9000, Color.red);
+        Debug.DrawRay(this.transform.position, Vector3.right * RayDist, Color.red);
 
 
         if (Physics.Raycast(this.transform.position, Vector3.right, out hit, RayDist))
