@@ -35,9 +35,9 @@ public class EmpireFighterFiring : MonoBehaviour
         if (nextTimeToFire >= fireRate)//testing 
         {
             nextTimeToFire = 0;
-            objectPooler.SpawnFromPool("Bullet", bulletSpawn.position, bulletSpawn.rotation);
+            objectPooler.SpawnFromPool("BulletFighter", bulletSpawn.position, bulletSpawn.rotation);
             AudioSource.Play();
-            objectPooler.SpawnFromPool("Bullet", bulletSpawn2.position, bulletSpawn.rotation);
+            objectPooler.SpawnFromPool("BulletFighter", bulletSpawn2.position, bulletSpawn.rotation);
 
 
         }

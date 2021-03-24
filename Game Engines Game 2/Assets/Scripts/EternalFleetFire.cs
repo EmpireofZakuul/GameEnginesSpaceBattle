@@ -9,10 +9,11 @@ public class EternalFleetFire : MonoBehaviour
     public Transform sensorRay;
     public Transform gunPosition;
     public float RayDist = 10;
-    public bool targetFound =  false;
+    public bool targetFound = false;
     public bool GunsRotated = false;
     public bool GunFiringLoop = false;
     public RaycastHit hit;
+
 
 
     [Header("Ship Firing")]
@@ -24,17 +25,18 @@ public class EternalFleetFire : MonoBehaviour
     public Transform bulletSpawn3;
     public Transform bulletSpawn4;
     public float speed = 20;
+    private Coroutine _fire;
 
 
     ObjectPool objectPooler;
-   
+
     // Start is called before the first frame update
     void Start()
     {
         objectPooler = ObjectPool.Instance;
 
-        
-       
+
+
     }
 
     // Update is called once per frame
@@ -42,43 +44,30 @@ public class EternalFleetFire : MonoBehaviour
     {
         //RaycastHit hit;
 
-        Debug.DrawRay(this.transform.position, Vector3.left * 10000, Color.green);
 
 
-        if (Physics.Raycast(this.transform.position, Vector3.left , out hit, RayDist))
+
+        if (Physics.Raycast(this.transform.position, Vector3.left, out hit, RayDist))
         {
-           
-            
+            Debug.DrawRay(this.transform.position, Vector3.left * hit.distance, Color.green);
+
             if (hit.collider.gameObject.tag == "Enemy")
             {
                 Debug.Log(hit.point);
-                targetFound = true;
+
+                if (!targetFound)
+                {
+                    targetFound = true;
+                    GunsRotated = true;
+                    //RotateTurrets();
+                    WhatEverShipoDoing(hit.transform);
+                }
             }
 
         }
-        if (targetFound )
-        {
-            //transform.rotation =  Quaternion.Euler(0, hit.point, 0);
-            //transform.localEulerAngles = new Vector3(0, hit.point, 0);
 
-            //Vector3 targetDir = hit.point - gunPosition.position;
-           //transform.rotation =  Vector3.Angle(targetDir, Vector3.forward);
 
-            //transform.rotation = Vector3.Angle(gunPosition, hit.point);
-
-            // float angleToTarg = Vector3.Angle(transform.forward, gunPosition.transform.position - hit.point);
-            // transform.rotation = angleToTarg;
-            targetFound = true;
-            GunsRotated = true;
-        }
-        //if any ships raycast hits the target, all ships roatae there guns and fire
-
-       // else if ()
-       //{
-
-       //}
-
-        if (targetFound && GunsRotated && !GunFiringLoop)
+        /*if (targetFound && GunsRotated && !GunFiringLoop)
         {
             nextTimeToFire += Time.deltaTime;
             if (nextTimeToFire >= fireRate)//testing 
@@ -88,13 +77,40 @@ public class EternalFleetFire : MonoBehaviour
                
             }
         }
-        
+        */
+
     }
 
+    public void RotateTurrets(Transform target)
+    {
+
+        gunPosition.LookAt(target);
+        gunPosition.localEulerAngles = new Vector3(0, gunPosition.localEulerAngles.y, 0);
+    }
+
+    public void WhatEverShipoDoing(Transform target)
+    {
+        for (int row = 0; row < EternalFleetSpawn.Instance.numberOfRows; row++)
+        {
+            for (int col = 0; col < EternalFleetSpawn.Instance.numberOfColumns; col++)
+            {
+                EternalFleetFire shipChan = EternalFleetSpawn.Instance.eternalFleet[row, col];
+
+                if (shipChan)
+                {
+                    shipChan.RotateTurrets(target);
+                    shipChan.InitFire();
+                }
+
+            }
+
+        }
+    }
 
     public IEnumerator Fire()
     {
-        GunFiringLoop = true;
+
+       // GunFiringLoop = true;
         while (true)
         {
             GunFiringLoop = true;
@@ -113,8 +129,21 @@ public class EternalFleetFire : MonoBehaviour
             objectPooler.SpawnFromPool("Bullet", bulletSpawn4.position, bulletSpawn.rotation);
 
             yield return new WaitForSeconds(1.5f);
+
         }
-       
+        //_fire = null;
+
     }
-   
+
+    public void InitFire()
+    {
+        if (_fire == null)
+            _fire = StartCoroutine(Fire());
+        
+
+    }
+
 }
+     
+   
+
