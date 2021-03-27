@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - EternalEnemy
   - Bullet
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

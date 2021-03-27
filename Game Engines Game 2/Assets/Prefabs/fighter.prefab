@@ -92,6 +92,8 @@ GameObject:
   - component: {fileID: 2076870674610849654}
   - component: {fileID: 83041382560555437}
   - component: {fileID: 7606235255715539617}
+  - component: {fileID: 4518653575247689049}
+  - component: {fileID: 6473152278665851519}
   m_Layer: 0
   m_Name: fighter
   m_TagString: Enemy
@@ -147,12 +149,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  fireRate: 15
+  fireRate: 0.8
   projectile: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
     type: 3}
   bulletSpawn: {fileID: 3216102544569745717}
   bulletSpawn2: {fileID: 4928433759426583146}
-  speed: 20
+  speed: 15
   fire: 0
   AudioSource: {fileID: 3008107260161775769}
   audioOn: 0
@@ -252,6 +254,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4518653575247689049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670722854352443540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 866abc2934e3ab543931788bc5cde832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6473152278665851519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670722854352443540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930a9ccfdc30de941a5cb92eaacdc153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
+  explode: 0
+  effect: {fileID: 0}
 --- !u!1 &2979091421263031237
 GameObject:
   m_ObjectHideFlags: 0
