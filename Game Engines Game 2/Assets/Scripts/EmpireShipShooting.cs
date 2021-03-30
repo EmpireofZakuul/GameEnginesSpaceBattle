@@ -20,6 +20,11 @@ public class EmpireShipShooting : MonoBehaviour
     public Transform bulletSpawn;
     public float speed = 20;
 
+    public GameObject[] empties;
+    public GameObject[,] fireSquence;
+    public int numberOfRows;
+    public int numberOfColumns;
+
     [Header("Ship audio")]
     public AudioSource AudioSource;
     public AudioSource AudioSource2;
@@ -94,5 +99,22 @@ public class EmpireShipShooting : MonoBehaviour
         }
 
     }
+
+    public void Firing()
+    {
+        fireSquence = new GameObject[numberOfRows,numberOfColumns];
+
+        for (int row = 0; row < numberOfRows; row++)
+        {
+            for (int col = 0; col < numberOfColumns; col++)
+            {
+               //an array of empties numbering from 0 to 64
+               // add empties to turrets
+               // then cycle through each turret and fire its guns in squence
+               // and use object pooling to fire the guns
+            }
+        }
+    }
+
 }
 
