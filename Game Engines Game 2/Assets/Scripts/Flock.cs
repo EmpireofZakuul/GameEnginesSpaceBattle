@@ -9,13 +9,13 @@ public class Flock : MonoBehaviour
     List<FlockAgent> agents = new List<FlockAgent>();
     public FlockBehaviour behaviour;
 
-    [Range(10,100)]
+    [Range(10,200)]
     public int shipStartCount = 40;
     [Range(0f, 10f)]
     public float shipDensity = 0.1f;
     [Range(1f,100f)]
     public float driveFactor = 10f;
-    [Range(1f,10f)]
+    [Range(1f,100f)]
     public float ShipMaxSpeed = 10;
     [Range(1f, 10f)]
     public float neighborRadius = 1.5f; 
@@ -25,7 +25,7 @@ public class Flock : MonoBehaviour
     float _neighborRadiusSquared;
     float _ShipAdvidanceRadiusSquared;
     float _squaredMaxSpeed;
-    public float _squaredAdvidanceRadius { get { return _neighborRadiusSquared; } }
+    public float _squaredAdvanceRadius { get { return _neighborRadiusSquared; } }
 
     // Start is called before the first frame update
     void Start()
@@ -60,13 +60,13 @@ public class Flock : MonoBehaviour
         {
             List<Transform> context = GetNearByObjects(agent);
 
-            //Vector3 shipMove = behaviour.CalculateMove(agent, context, this);
-            //shipMove *= driveFactor;
-            //if(shipMove.sqrMagnitude > _squaredMaxSpeed)
-            //{
-            //    shipMove = move.normalized * ShipMaxSpeed;
-            //}
-            //agent.MoveShip(move);
+            Vector3 shipMove = behaviour.CalculateMove(agent, context, this);
+            shipMove *= driveFactor;
+            if (shipMove.sqrMagnitude > _squaredMaxSpeed)
+            {
+                shipMove = shipMove.normalized * ShipMaxSpeed;
+            }
+            agent.MoveShip(shipMove);
         }
 
 

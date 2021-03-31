@@ -24817,13 +24817,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 4518653575247689049, guid: cc36574ae3b001347985c323d281ba86,
     type: 3}
-  behaviour: {fileID: 0}
-  shipStartCount: 80
-  shipDensity: 6
-  driveFactor: 10
-  ShipMaxSpeed: 10
+  behaviour: {fileID: 11400000, guid: 51e67c88a3e4c9942b96ec3057c28493, type: 2}
+  shipStartCount: 150
+  shipDensity: 3
+  driveFactor: 71.3
+  ShipMaxSpeed: 30
   neighborRadius: 1.5
-  ShipAdvidanceRadiusMultiplier: 0.238
+  ShipAdvidanceRadiusMultiplier: 0.5
 --- !u!1 &1587368320
 GameObject:
   m_ObjectHideFlags: 0
