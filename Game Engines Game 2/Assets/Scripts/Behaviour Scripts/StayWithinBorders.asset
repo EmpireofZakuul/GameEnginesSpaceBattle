@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb345159d83d5a9449994851e8fa998b, type: 3}
-  m_Name: Steered Cohesion
+  m_Script: {fileID: 11500000, guid: 3fe96197ada6f974588074764b7c03e0, type: 3}
+  m_Name: StayWithinBorders
   m_EditorClassIdentifier: 
-  agentSmootedTime: 1
+  center: {x: 0, y: 0, z: 0}
+  radius: 100

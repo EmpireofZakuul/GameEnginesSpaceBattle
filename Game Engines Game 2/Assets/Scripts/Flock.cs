@@ -39,10 +39,11 @@ public class Flock : MonoBehaviour
             FlockAgent shipAgent = Instantiate(
                 agentPrefab,
                 //transform.position,
-                Random.insideUnitCircle * shipStartCount * shipDensity,
-               transform.rotation,
+                Random.insideUnitCircle * shipStartCount * shipDensity, 
+                Quaternion.Euler(Vector3.zero),
+                //transform.rotation,
                 transform
-                ) ;
+                ); 
 
             shipAgent.name = "ShipAgent" + i;
             agents.Add(shipAgent);
@@ -81,7 +82,7 @@ public class Flock : MonoBehaviour
         {
             if(collider != agent.AgentCollider)
             {
-                context.Add(collider.transform);
+                context.Add(collider.transform);//is this adding the collider to the fighter,if is its not 
             }
         }
         return context;

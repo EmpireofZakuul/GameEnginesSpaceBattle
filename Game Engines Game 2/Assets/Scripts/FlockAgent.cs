@@ -7,6 +7,8 @@ public class FlockAgent : MonoBehaviour
 {
     Collider agentCollider;
     public Collider AgentCollider { get{ return agentCollider;}}
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +19,9 @@ public class FlockAgent : MonoBehaviour
    {
     transform.forward = velocity;
     transform.position += velocity * Time.deltaTime;
-   }
+
+       
+    }
+
+  
 }

@@ -266,6 +266,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866abc2934e3ab543931788bc5cde832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shipVelocity: {x: 0, y: 0, z: 0}
+  shipSpeed: 10
+  shipAcceleration: {x: 0, y: 0, z: 0}
+  shipForce: {x: 0, y: 0, z: 0}
+  maxSpeed: 10
+  maxForce: 20
+  shipsMass: 1
+  shipBanking: 0.1
+  damping: 0.1
 --- !u!114 &6473152278665851519
 MonoBehaviour:
   m_ObjectHideFlags: 0
