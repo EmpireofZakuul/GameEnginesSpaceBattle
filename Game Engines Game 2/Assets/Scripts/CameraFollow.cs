@@ -64,7 +64,7 @@ public class CameraFollow : MonoBehaviour
 
         }
 
-        else if (ShipMovement.shipSpeed <= 2)
+     else if (ShipMovement.shipSpeed <= 10)
         {
             Vector3 newDesiredCameraPosition = targetObject.position + cameraOffsetNew;
             Vector3 newCameraPosition = Vector3.Lerp(transform.position, newDesiredCameraPosition, smoothSpeedCameraPan * Time.deltaTime);

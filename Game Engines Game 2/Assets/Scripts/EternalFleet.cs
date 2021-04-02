@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class EternalFleet : MonoBehaviour
 {
-    [Header("Ship Movment")]
-    public Vector3 shipVelocity;
-    public float shipSpeed;
-    public Vector3 shipAcceleration;
-    public Vector3 shipForce;
-    public float maxSpeed = 10;
-    public float maxForce = 20;
+    //[Header("Ship Movment")]
+    //public Vector3 shipVelocity;
+    //public float shipSpeed;
+    //public Vector3 shipAcceleration;
+    //public Vector3 shipForce;
+    //public float maxSpeed = 10;
+    //public float maxForce = 20;
+    //public float shipsMass = 1;
+    //public float shipSlowingDistance = 80;
+    //public float damping = 0.1f;
 
-    public float shipsMass = 1;
-
-    public float shipSlowingDistance = 80;
-
-    public float damping = 0.1f;
-
+   
 
 
 
@@ -37,8 +35,12 @@ public class EternalFleet : MonoBehaviour
         shipSpeed = shipVelocity.magnitude;
         */
 
+      
         
     }
-    
+    public void ChangeMaterial()
+    {
+  
+    }
 
 }

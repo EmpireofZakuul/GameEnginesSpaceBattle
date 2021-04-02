@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 695173526596004838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTurretEmpties
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4996445966534563341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BottomRightGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1041144280943017294}
   - component: {fileID: 5748940155295487004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sensor Array
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8079613632015379294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TopRightGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5313559506524372279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BottomLeftGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7908884625596778859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5482650783891967026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TopLeftGunTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 8827735360916030643}
   - component: {fileID: 8610912347822920243}
   - component: {fileID: 5286326092939825229}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: front body.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8827708781095067783}
   - component: {fileID: 7302599934921541772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eternal Fleet
   m_TagString: EternalEnemy
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 5689159926110862306}
   - component: {fileID: 3967290152545734012}
   - component: {fileID: 4758238498374848931}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
