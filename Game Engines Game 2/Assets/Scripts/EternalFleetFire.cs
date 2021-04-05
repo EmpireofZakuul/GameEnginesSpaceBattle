@@ -51,7 +51,7 @@ public class EternalFleetFire : MonoBehaviour
         {
             Debug.DrawRay(this.transform.position, Vector3.left * hit.distance, Color.green);
 
-            if (hit.collider.gameObject.tag == "Enemy")
+            if (hit.collider.gameObject.tag == "EmpireEnemy")
             {
                 Debug.Log(hit.point);
 

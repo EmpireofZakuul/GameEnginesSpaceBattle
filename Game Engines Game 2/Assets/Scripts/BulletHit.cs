@@ -22,8 +22,9 @@ public class BulletHit : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     { 
-        if (other.gameObject.tag == "Enemy")
-        {
+        if ( other.gameObject.tag == "EmpireEnemy")
+           // if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "EmpireEnemy")
+            {
             //Instantiate(effect, transform.position, transform.rotation);
             objectPooler.SpawnFromPool("Explosions", transform.position, transform.rotation);
             //objectPooler.ReturnToPool();

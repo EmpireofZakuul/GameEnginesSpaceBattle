@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1755233652331372721}
   m_Layer: 8
   m_Name: SpawnPoints
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4452466878457880606}
   m_Layer: 8
   m_Name: GameObject (1)
-  m_TagString: SpawnPoint
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 3043951667644126820}
   m_Layer: 8
   m_Name: GameObject
-  m_TagString: SpawnPoint
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 903498918377446392}
   m_Layer: 8
   m_Name: SensorArray
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 8420824532840522756}
   m_Layer: 8
   m_Name: TopRightGunTurret
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 8420824533399602911}
   m_Layer: 8
   m_Name: BottomMiddleRightGunTurret
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1325,7 +1325,7 @@ GameObject:
   - component: {fileID: 8420824533430121721}
   m_Layer: 8
   m_Name: TopMiddleRightGunTurret
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1483,7 +1483,7 @@ GameObject:
   - component: {fileID: 8420824533531638246}
   m_Layer: 8
   m_Name: 'BottomMiddleLeftGunTurret '
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2096,7 +2096,7 @@ GameObject:
   - component: {fileID: 1167311834294291423}
   m_Layer: 8
   m_Name: EmpireShip
-  m_TagString: Enemy
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2138,7 +2138,7 @@ MonoBehaviour:
   maxSpeed: 70
   maxForce: 40
   shipsMass: 1
-  seekEnabled: 1
+  seekEnabled: 0
   seekTargetTransform: {fileID: 0}
   seekTarget: {x: 0, y: 0, z: 0}
   shipSlowingDistance: 200
@@ -2163,6 +2163,7 @@ MonoBehaviour:
   health: 0
   explode: 0
   effect: {fileID: 2652530741742366411, guid: ebeaffe1a8257d84cbc4531bbdc9d00f, type: 3}
+  game: {fileID: 0}
 --- !u!82 &4489797290950419073
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2326,7 +2327,7 @@ GameObject:
   - component: {fileID: 8420824534270420782}
   m_Layer: 8
   m_Name: TopLeftGunTurret
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2514,7 +2515,7 @@ GameObject:
   - component: {fileID: 8420824534393525726}
   m_Layer: 8
   m_Name: TopMiddleLeftGunTurret
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2552,7 +2553,7 @@ GameObject:
   - component: {fileID: 8420824534416549605}
   m_Layer: 8
   m_Name: 'BottomLeftGunTurret '
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2620,7 +2621,7 @@ GameObject:
   - component: {fileID: 8420824534515713840}
   m_Layer: 8
   m_Name: 'BottomRightGunTurret '
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2658,7 +2659,7 @@ GameObject:
   - component: {fileID: 8420824534534441951}
   m_Layer: 8
   m_Name: GunTurretEmpties
-  m_TagString: Untagged
+  m_TagString: EmpireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2878,30 +2879,60 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: -7640558969779515294, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
       objectReference: {fileID: 0}
     - target: {fileID: -7146521406498821007, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: -6763858364670572316, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6763858364670572316, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
       objectReference: {fileID: 0}
     - target: {fileID: -6733177361254619370, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -6733177361254619370, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: -5568371526223589888, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
       objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
@@ -2913,30 +2944,60 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -2045257923548263128, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: -1599826595754709761, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1599826595754709761, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
       objectReference: {fileID: 0}
     - target: {fileID: -516098083770646512, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: -466329591000292508, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -466329591000292508, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
       objectReference: {fileID: 0}
     - target: {fileID: -208595431880416365, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -208595431880416365, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 281855664364225751, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
@@ -2948,20 +3009,40 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8009987137999418058, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009987137999418058, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 8416272007918961125, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8513859187771203891, guid: 4a23d281ff8c5524cad0355cf9d08356,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: 4a23d281ff8c5524cad0355cf9d08356,
+        type: 3}
+      propertyPath: m_TagString
+      value: EmpireEnemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a23d281ff8c5524cad0355cf9d08356, type: 3}

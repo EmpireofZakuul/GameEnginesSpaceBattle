@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 83041382560555437}
   - component: {fileID: 7606235255715539617}
   - component: {fileID: 4518653575247689049}
-  - component: {fileID: 6473152278665851519}
+  - component: {fileID: 8655412226966883106}
   m_Layer: 0
   m_Name: fighter
   m_TagString: Enemy
@@ -266,16 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866abc2934e3ab543931788bc5cde832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipVelocity: {x: 0, y: 0, z: 0}
-  shipSpeed: 10
-  shipAcceleration: {x: 0, y: 0, z: 0}
-  shipForce: {x: 0, y: 0, z: 0}
-  maxSpeed: 10
-  maxForce: 20
-  shipsMass: 1
-  shipBanking: 0.1
-  damping: 0.1
---- !u!114 &6473152278665851519
+--- !u!114 &8655412226966883106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,13 +275,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1670722854352443540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 930a9ccfdc30de941a5cb92eaacdc153, type: 3}
+  m_Script: {fileID: 11500000, guid: c97cc248666f5834c9a87a0ff9fc6e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   health: 0
   explode: 0
-  effect: {fileID: 0}
+  effect: {fileID: 3675263091104240392, guid: 1d95ca44b1b55c64391d672bce065516, type: 3}
 --- !u!1 &2979091421263031237
 GameObject:
   m_ObjectHideFlags: 0

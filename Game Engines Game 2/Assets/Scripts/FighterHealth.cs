@@ -21,7 +21,13 @@ public class FighterHealth : MonoBehaviour
         if (health <= 0 && !explode)
         {
             Dead();
-            explode = true;
+            explode = false;
+        }
+
+        if ( explode)
+        {
+            Dead();
+            explode = false;
         }
     }
     public void OnTriggerEnter(Collider other)
@@ -40,7 +46,7 @@ public class FighterHealth : MonoBehaviour
     public void Dead()
     {
         Instantiate(effect, transform.position, transform.rotation);
-
-        Destroy(gameObject, 1f);
+        gameObject.SetActive(false);
+        //Destroy(gameObject, 1f);
     }
 }
