@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensorRay: {fileID: 2591520237922062902}
-  RayDist: 8000
+  RayDist: 5000
   targetFound: 0
   GunsRotated: 0
   GunFiringLoop: 0
@@ -2161,7 +2161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   health: 0
-  explode: 0
+  explode: 1
   effect: {fileID: 2652530741742366411, guid: ebeaffe1a8257d84cbc4531bbdc9d00f, type: 3}
   game: {fileID: 0}
 --- !u!82 &4489797290950419073

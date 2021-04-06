@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensorRay: {fileID: 1041144280943017294}
   gunPosition: {fileID: 8827735360916030643}
-  RayDist: 10000
+  RayDist: 5500
   targetFound: 0
   GunsRotated: 0
   GunFiringLoop: 0
