@@ -18,7 +18,7 @@ public class EternalFleetFire : MonoBehaviour
 
     [Header("Ship Firing")]
     public float fireRate = 15f;
-    private float nextTimeToFire = 0f;
+   // private float nextTimeToFire = 0f;
     public GameObject projectile;
     public Transform bulletSpawn;
     public Transform bulletSpawn2;
@@ -27,7 +27,7 @@ public class EternalFleetFire : MonoBehaviour
     public float speed = 20;
     private Coroutine _fire;
 
-
+    
     ObjectPool objectPooler;
 
     // Start is called before the first frame update
