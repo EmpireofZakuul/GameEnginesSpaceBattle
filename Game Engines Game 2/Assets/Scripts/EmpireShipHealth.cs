@@ -10,6 +10,7 @@ public class EmpireShipHealth : MonoBehaviour
     public bool explode = true;
     public Transform effect;
     public GameManager game;
+    public GameObject cameraHolder;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +51,7 @@ public class EmpireShipHealth : MonoBehaviour
        
         Instantiate(effect, transform.position, transform.rotation);
         game.shipCounter--;
+        Destroy(cameraHolder);
         Destroy(gameObject, .5f);
     }
 }

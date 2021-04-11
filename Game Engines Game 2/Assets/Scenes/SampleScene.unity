@@ -10033,6 +10033,11 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: pathFollowingEnabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803f8e5e43920b549991fafd92125200, type: 3}
 --- !u!1 &341298482
@@ -10275,7 +10280,7 @@ MonoBehaviour:
   - tag: Bullet
     prefab: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
       type: 3}
-    size: 300
+    size: 600
   - tag: Explosions
     prefab: {fileID: 3675263091104240395, guid: 1d95ca44b1b55c64391d672bce065516,
       type: 3}
@@ -25411,6 +25416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraEnd: {fileID: 1346499559}
+  speed: 34
 --- !u!1 &1250450723
 GameObject:
   m_ObjectHideFlags: 0
@@ -25528,7 +25534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346499558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2753, y: 297, z: 7810}
+  m_LocalPosition: {x: 2753, y: 297, z: 7818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -26457,6 +26463,11 @@ PrefabInstance:
       propertyPath: game
       value: 
       objectReference: {fileID: 481171952}
+    - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: cameraHolder
+      value: 
+      objectReference: {fileID: 1385476101}
     - target: {fileID: 8420824534217881090, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: m_Name
