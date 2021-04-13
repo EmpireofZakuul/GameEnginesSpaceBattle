@@ -5116,7 +5116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242649356}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17463, y: -60, z: 6294}
+  m_LocalPosition: {x: 17463, y: -60, z: 6493}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1799198179}
@@ -5139,8 +5139,6 @@ MonoBehaviour:
   health: 0
   explode: 1
   effect: {fileID: 2652530741742366411, guid: ebeaffe1a8257d84cbc4531bbdc9d00f, type: 3}
-  cameraEnd: {fileID: 434731653}
-  speed: 50
   isFound: 0
 --- !u!1 &250752329
 GameObject:
@@ -10008,6 +10006,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8420824534217881092, guid: 803f8e5e43920b549991fafd92125200,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8420824534217881093, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: points
@@ -10176,11 +10179,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434731652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2987, y: -60, z: 6294}
+  m_LocalPosition: {x: 2987, y: -60, z: 6493}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &467952587
 GameObject:
@@ -10243,7 +10246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b894873a7d51248b6023c69afffe85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship: {fileID: 8827708781095067783, guid: c150c70b839c2b945805f34f507a8fbb, type: 3}
+  ship: {fileID: 7036382899905536252, guid: a1d0f3b316ef7cf4686b48ea3ec24354, type: 3}
   shipParent: {fileID: 242649357}
   shipStartPos: {fileID: 596465817}
   numberOfRows: 3
@@ -10280,7 +10283,7 @@ MonoBehaviour:
   - tag: Bullet
     prefab: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
       type: 3}
-    size: 600
+    size: 1000
   - tag: Explosions
     prefab: {fileID: 3675263091104240395, guid: 1d95ca44b1b55c64391d672bce065516,
       type: 3}
@@ -10303,6 +10306,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipCounter: 5
   last: 0
+  cameraEnd: {fileID: 434731653}
+  holder: {fileID: 242649356}
+  speed: 2300
+  arrived: 1
+  startMoving: 0
 --- !u!1 &497170421
 GameObject:
   m_ObjectHideFlags: 0
@@ -15492,8 +15500,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 8000
-  field of view: 60
+  far clip plane: 6000
+  field of view: 53
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -25306,7 +25314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1195447621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25416,7 +25424,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraEnd: {fileID: 1346499559}
-  speed: 34
+  speed: 2300
+  rotateSpeed: 5
+  roated: 0
+  newSpeed: 0
+  position: 0
 --- !u!1 &1250450723
 GameObject:
   m_ObjectHideFlags: 0
@@ -25450,7 +25462,7 @@ Transform:
   - {fileID: 502445755}
   - {fileID: 1760941052}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1277595595
 GameObject:
@@ -25609,6 +25621,8 @@ MonoBehaviour:
   finalCameraOffset: {x: -368.6, y: 60, z: -24.4}
   ShipMovement: {fileID: 1920855216}
   changeTarget: 0
+  GameManager: {fileID: 481171952}
+  Camera2: {fileID: 1195447620}
   firstCamera: {fileID: 963194227}
   secondCamera: {fileID: 1195447622}
 --- !u!4 &1385476103
@@ -25711,7 +25725,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1505096572
 MonoBehaviour:
@@ -25922,6 +25936,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 310164254}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1635448200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635448199}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293ac6e6fa999ce43a95d2d037e8790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1635448206
 MonoBehaviour:
   m_ObjectHideFlags: 0

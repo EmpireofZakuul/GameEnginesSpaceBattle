@@ -4,16 +4,7 @@ using UnityEngine;
 
 public class EternalFleet : MonoBehaviour
 {
-    //[Header("Ship Movment")]
-    //public Vector3 shipVelocity;
-    //public float shipSpeed;
-    //public Vector3 shipAcceleration;
-    //public Vector3 shipForce;
-    //public float maxSpeed = 10;
-    //public float maxForce = 20;
-    //public float shipsMass = 1;
-    //public float shipSlowingDistance = 80;
-    //public float damping = 0.1f;
+   
 
     [Header("Health")]
     public int maxHealth = 100;
@@ -22,8 +13,8 @@ public class EternalFleet : MonoBehaviour
     public Transform effect;
 
 
-    public Transform cameraEnd;
-    public float speed = 1f;
+   // public Transform cameraEnd;
+   // public float speed = 1f;
     public bool isFound;
 
     // Start is called before the first frame update
@@ -36,13 +27,7 @@ public class EternalFleet : MonoBehaviour
     void Update()
     {
 
-        /*shipAcceleration = shipForce / shipsMass;
-        shipVelocity = shipVelocity + shipAcceleration * Time.deltaTime;
-        transform.position = transform.position + shipVelocity * Time.deltaTime;
-        shipSpeed = shipVelocity.magnitude;
-        */
-
-        transform.position = Vector3.MoveTowards(transform.position, cameraEnd.position, speed * Time.deltaTime);
+       // transform.position = Vector3.MoveTowards(transform.position, cameraEnd.position, speed * Time.deltaTime);
 
         if (health <= 0 && explode)
         {

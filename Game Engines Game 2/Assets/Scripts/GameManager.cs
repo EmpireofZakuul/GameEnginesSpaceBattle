@@ -7,7 +7,16 @@ public class GameManager : MonoBehaviour
     public int shipCounter = 5;
     public bool last = false;
     private GameObject my;
+    public Transform cameraEnd;
+    public GameObject holder;
+    public float speed = 600f;
+    public bool arrived = true;
+    public bool startMoving = false;
 
+    public void Start()
+    {
+        holder.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +32,20 @@ public class GameManager : MonoBehaviour
             my.GetComponentInChildren<ShipMovement>().seekEnabled= true;
             Debug.Log("changed seek ");
             last = true;
+        }
+
+        if (holder.transform.position != cameraEnd.position && startMoving)
+        {
+            holder.transform.position = Vector3.MoveTowards(holder.transform.position, cameraEnd.position, speed * Time.deltaTime);
+            
+        }
+
+
+        if(holder.transform.position == cameraEnd.position && arrived )
+        {
+            startMoving = false;
+            holder.SetActive(true);
+            arrived = false;
         }
     }
     

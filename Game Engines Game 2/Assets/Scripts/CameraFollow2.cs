@@ -9,6 +9,8 @@ public class CameraFollow2 : MonoBehaviour
     public float rotateSpeed = 5;
     public bool roated = false;
     public bool newSpeed = false;
+    public bool position = false;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +20,9 @@ public class CameraFollow2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, cameraEnd.position, speed * Time.deltaTime);
+        
 
-        if( transform.position.x <= 11718 && !newSpeed)
+       /* if( transform.position.x <= 11718 && !newSpeed)
         {
             speed = 120f;
         }
@@ -31,6 +33,21 @@ public class CameraFollow2 : MonoBehaviour
             roated = true;
             newSpeed = true;
             transform.Rotate(15 , 90 , 0);
+        }
+       */
+
+        if(transform.position != cameraEnd.position && !position)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, cameraEnd.position, speed * Time.deltaTime);
+            
+        }
+
+        if(transform.position == cameraEnd.position && !roated)
+        {
+            position = true;
+            roated = true;
+            newSpeed = true;
+            transform.Rotate(15, 90, 0);
         }
     }
 }

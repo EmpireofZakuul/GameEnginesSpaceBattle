@@ -40,7 +40,8 @@ public class CameraFollow : MonoBehaviour
     public Vector3 finalCameraOffset;
     public ShipMovement ShipMovement;
     public bool changeTarget = false;
-
+    public GameManager GameManager;
+    public GameObject Camera2;
 
     public Camera firstCamera;
     public Camera secondCamera;
@@ -75,18 +76,20 @@ public class CameraFollow : MonoBehaviour
 
 
             changeTarget = true;
-            Invoke("LookAtEternalFleet", changeTargetTime);
+            //Invoke("LookAtEternalFleet", changeTargetTime);
         }
 
-/*
+
         if (transform.position.x >= 74 && transform.position.y >= 45 && transform.position.z >= 8365 && changeTarget)
         {
-            transform.Rotate(1.279f, -101.471f, 0f);
+            GameManager.startMoving = true;
+            Camera2.SetActive(true);
+            transform.Rotate(1.279f, -101.471f, 6.09f);
             Invoke("LookAtEternalFleet", changeTargetTime);
         }
-       //Invoke("LookAtEternalFleet", changeTargetTime);
+      //Invoke("LookAtEternalFleet", changeTargetTime);
         
-        */
+        
     }
     
     void LookAtEternalFleet()
