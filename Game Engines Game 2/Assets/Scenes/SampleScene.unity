@@ -25429,6 +25429,11 @@ MonoBehaviour:
   roated: 0
   newSpeed: 0
   position: 0
+  time: 10
+  timeIsRunning: 0
+  moving: 1
+  positionToMoveTo: {x: 2258, y: 297, z: 7818}
+  targetRot: {x: 15, y: 270, z: 0}
 --- !u!1 &1250450723
 GameObject:
   m_ObjectHideFlags: 0
@@ -25613,7 +25618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1920855217}
   newTargetObject: {fileID: 242649357}
-  changeTargetTime: 20
+  changeTargetTime: 15
   smoothSpeed: 5
   smoothSpeedCameraPan: 0.2
   cameraOffset: {x: 0, y: 0, z: -834}
@@ -25625,6 +25630,7 @@ MonoBehaviour:
   Camera2: {fileID: 1195447620}
   firstCamera: {fileID: 963194227}
   secondCamera: {fileID: 1195447622}
+  targetRotation: {x: 0, y: 90, z: 0}
 --- !u!4 &1385476103
 Transform:
   m_ObjectHideFlags: 0

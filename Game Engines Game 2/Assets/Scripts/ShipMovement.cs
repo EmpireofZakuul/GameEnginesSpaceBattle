@@ -104,7 +104,7 @@ public class ShipMovement : MonoBehaviour
         shipForce = CalculateForce();
         shipAcceleration = shipForce / shipsMass;
         shipVelocity = shipVelocity + shipAcceleration * Time.deltaTime;
-        transform.position = transform.position + shipVelocity * Time.deltaTime;
+        transform.position = transform.position + shipVelocity * Time.deltaTime;// this is the line of code that it says is broken
         shipSpeed = shipVelocity.magnitude;
         if (shipSpeed > 1)
         {

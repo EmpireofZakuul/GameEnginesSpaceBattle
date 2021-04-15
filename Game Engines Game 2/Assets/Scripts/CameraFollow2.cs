@@ -10,7 +10,12 @@ public class CameraFollow2 : MonoBehaviour
     public bool roated = false;
     public bool newSpeed = false;
     public bool position = false;
-  
+    public float time = 2f;
+    public bool timeIsRunning = false;
+    public bool moving = true;
+    public Vector3 positionToMoveTo;
+    public Vector3 targetRot;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +53,55 @@ public class CameraFollow2 : MonoBehaviour
             roated = true;
             newSpeed = true;
             transform.Rotate(15, 90, 0);
+            timeIsRunning = true;
         }
+
+        if (timeIsRunning)
+        {
+            if(time >= 0)
+            {
+                time -= Time.deltaTime;
+            }
+            else
+            {
+                time = 0;
+                timeIsRunning = false;
+            }
+
+            if(time == 0 && moving)
+            {
+                moving = false;
+                StartCoroutine(LerpPosition(positionToMoveTo, 4));
+                StartCoroutine(LerpCamera(Quaternion.Euler(targetRot), 8));
+            }
+        }
+    }
+
+    IEnumerator LerpPosition(Vector3 targetPos, float duration)
+    {
+        float moveTime = 0;
+        Vector3 startPos = transform.position;
+
+        while (moveTime < duration)
+        {
+            transform.position = Vector3.Lerp(startPos, targetPos, moveTime / duration);
+            moveTime += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPos;
+    }
+
+    IEnumerator LerpCamera(Quaternion endValue, float duration)
+    {
+        float time = 0;
+        Quaternion startValue = transform.rotation;
+
+        while (time < duration)
+        {
+            transform.rotation = Quaternion.Lerp(startValue, endValue, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.rotation = endValue;
     }
 }

@@ -45,6 +45,7 @@ public class CameraFollow : MonoBehaviour
 
     public Camera firstCamera;
     public Camera secondCamera;
+    public Vector3 targetRotation;
 
     private void Start()
     {
@@ -65,7 +66,7 @@ public class CameraFollow : MonoBehaviour
 
         }
 
-     else if (ShipMovement.shipSpeed <= 10)
+        else if (ShipMovement.shipSpeed <= 10)
         {
             Vector3 newDesiredCameraPosition = targetObject.position + cameraOffsetNew;
             Vector3 newCameraPosition = Vector3.Lerp(transform.position, newDesiredCameraPosition, smoothSpeedCameraPan * Time.deltaTime);
@@ -82,16 +83,30 @@ public class CameraFollow : MonoBehaviour
 
         if (transform.position.x >= 74 && transform.position.y >= 45 && transform.position.z >= 8365 && changeTarget)
         {
+            changeTarget = false;
             GameManager.startMoving = true;
             Camera2.SetActive(true);
             transform.Rotate(1.279f, -101.471f, 6.09f);
+            //StartCoroutine(LerpFunction(Quaternion.Euler(targetRotation), 3));
             Invoke("LookAtEternalFleet", changeTargetTime);
-        }
-      //Invoke("LookAtEternalFleet", changeTargetTime);
-        
+        }   
         
     }
-    
+
+    IEnumerator LerpFunction(Quaternion endValue, float duration)
+    {
+        float time = 0;
+        Quaternion startValue = transform.rotation;
+
+        while (time < duration)
+        {
+            transform.rotation = Quaternion.Lerp(startValue, endValue, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.rotation = endValue;
+    }
+
     void LookAtEternalFleet()
     {
         firstCamera.enabled = false;
