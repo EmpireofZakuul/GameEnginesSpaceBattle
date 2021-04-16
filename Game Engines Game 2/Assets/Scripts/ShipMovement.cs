@@ -69,11 +69,17 @@ public class ShipMovement : MonoBehaviour
     {
         Vector3 toTarget = target - transform.position;
         float distance = toTarget.magnitude;
+        if (distance == 0) 
+        { 
+            distance = 0.000001f;
+            Debug.Log("NaN Prevented");
+        }
         float ramped = (distance / shipSlowingDistance) * maxSpeed;
         float clamped = Mathf.Min(ramped, maxSpeed);
         Vector3 desired = (toTarget / distance) * clamped;
 
         return desired - shipVelocity;
+        
     }
 
     public Vector3 CalculateForce()
@@ -101,10 +107,12 @@ public class ShipMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if ( shipSpeed == 0) return;
         shipForce = CalculateForce();
         shipAcceleration = shipForce / shipsMass;
         shipVelocity = shipVelocity + shipAcceleration * Time.deltaTime;
-        transform.position = transform.position + shipVelocity * Time.deltaTime;// this is the line of code that it says is broken
+        transform.position +=   shipVelocity * Time.deltaTime;// this is the line of code that it says is broken
+
         shipSpeed = shipVelocity.magnitude;
         if (shipSpeed > 1)
         {
@@ -113,7 +121,8 @@ public class ShipMovement : MonoBehaviour
        
             shipVelocity -= (damping * shipVelocity * Time.deltaTime);
         }
-        else if(!seekEnabled)
+       
+        else if (!seekEnabled)
         {
             shipSpeed = 0;
         }

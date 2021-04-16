@@ -4,10 +4,29 @@ using UnityEngine;
 
 public class EmpireShipScale : MonoBehaviour
 {
+    public float time = 8f;
+    public bool timeIsRunning = false;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(ScaleOverTime(5));
+        timeIsRunning = true;
+    }
+
+    public void Update()
+    {
+        if (timeIsRunning)
+        {
+            if (time >= 0)
+            {
+                time -= Time.deltaTime;
+            }
+            else
+            {
+                time = 0;
+                timeIsRunning = false;
+                StartCoroutine(ScaleOverTime(3));
+            }
+        }
     }
 
     IEnumerator ScaleOverTime(float time)
@@ -18,13 +37,13 @@ public class EmpireShipScale : MonoBehaviour
         float currentTime = 0.0f;
 
 
-        while (currentTime <= time)
+        while (currentTime < time)
         {
             transform.localScale = Vector3.Lerp(originalScale, destinationScale, currentTime / time);
             currentTime += Time.deltaTime;
             yield return null;
-        } 
-
+        }
+        transform.localScale = destinationScale;
 
     }
 }
