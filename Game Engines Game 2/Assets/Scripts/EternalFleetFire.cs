@@ -27,14 +27,18 @@ public class EternalFleetFire : MonoBehaviour
     public float speed = 20;
     private Coroutine _fire;
 
-    
+
+    [Header("Timer")]
+    public float timeRemaining = 20;
+    public bool timerIsRunning = false;
+
     ObjectPool objectPooler;
 
     // Start is called before the first frame update
     void Start()
     {
         objectPooler = ObjectPool.Instance;
-
+        timerIsRunning = true;
 
 
     }
@@ -66,18 +70,23 @@ public class EternalFleetFire : MonoBehaviour
 
         }
 
-
-        /*if (targetFound && GunsRotated && !GunFiringLoop)
+       /* if (timerIsRunning)
         {
-            nextTimeToFire += Time.deltaTime;
-            if (nextTimeToFire >= fireRate)//testing 
+            if (timeRemaining >= 0)
             {
-                nextTimeToFire = 0;
-                StartCoroutine(Fire());
-               
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+
+                timeRemaining = 20;
+                targetFound = false;
+                //timerIsRunning = false;
+
             }
         }
-        */
+       */
+
 
     }
 

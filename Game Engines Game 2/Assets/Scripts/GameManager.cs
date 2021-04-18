@@ -12,10 +12,14 @@ public class GameManager : MonoBehaviour
     public float speed = 600f;
     public bool arrived = true;
     public bool startMoving = false;
+    public bool audioOn = false;
+    public AudioManager AudioManager;
 
     public void Start()
     {
         holder.SetActive(false);
+        
+
     }
     // Update is called once per frame
     void Update()
@@ -46,6 +50,13 @@ public class GameManager : MonoBehaviour
             startMoving = false;
             holder.SetActive(true);
             arrived = false;
+        }
+
+        if(shipCounter == 4 && !audioOn)
+        {
+            AudioManager.Play("DeployTheGarrision");
+            audioOn = true;
+           
         }
     }
     

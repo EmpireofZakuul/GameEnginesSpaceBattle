@@ -39,6 +39,7 @@ public class EmpireShipShooting : MonoBehaviour
         objectPooler = ObjectPool.Instance;
         AudioSource.GetComponent<AudioSource>();
         AudioSource2.GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -60,9 +61,9 @@ public class EmpireShipShooting : MonoBehaviour
 
                 if(targetFound && !audioOn )
                 {
-                    AudioSource2.Play();
+                   
                     audioOn = true;
-                    
+                    AudioSource2.Play();
                 }
                 
             }
@@ -86,6 +87,7 @@ public class EmpireShipShooting : MonoBehaviour
 
     public IEnumerator Fire()
     {
+        
         GunFiringLoop = true;
         while (true)
         {

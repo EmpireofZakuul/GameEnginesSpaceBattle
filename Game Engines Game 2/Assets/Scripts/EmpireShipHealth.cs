@@ -11,6 +11,7 @@ public class EmpireShipHealth : MonoBehaviour
     public Transform effect;
     public GameManager game;
     public GameObject cameraHolder;
+    public GameObject topDownCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +53,7 @@ public class EmpireShipHealth : MonoBehaviour
         Instantiate(effect, transform.position, transform.rotation);
         game.shipCounter--;
         Destroy(cameraHolder);
+        Destroy(topDownCamera);
         Destroy(gameObject, .5f);
     }
 }

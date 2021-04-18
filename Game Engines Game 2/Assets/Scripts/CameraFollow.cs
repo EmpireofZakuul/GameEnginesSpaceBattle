@@ -4,32 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    /* public Transform targetObject;
-     public float smoothSpeed = 10f;
-     public Vector3 cameraOffset;
-     public Vector3 cameraOffsetNew;
-     public ShipMovement ShipMovement;
-
-
-     void LateUpdate()
-     {
-         //transform.position = targetObject.position + cameraOffset;
-
-          Vector3 desiredCameraPosition = targetObject.position + cameraOffset;
-          Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredCameraPosition, smoothSpeed * Time.deltaTime);
-         transform.position = smoothedPosition;
-
-          transform.LookAt(targetObject);
-
-        if(ShipMovement.shipSpeed == 0)
-         {
-             Vector3 newDesiredCameraPosition = targetObject.position + cameraOffsetNew;
-             Vector3 newCameraPosition = Vector3.Lerp(transform.position, newDesiredCameraPosition, smoothSpeed * Time.deltaTime);
-             transform.position = newCameraPosition;
-         }
-     }
-    */
-
+    [Header("Camera")]
     public Transform targetObject;
     public Transform newTargetObject;
     public float changeTargetTime = 3;
@@ -45,15 +20,43 @@ public class CameraFollow : MonoBehaviour
 
     public Camera firstCamera;
     public Camera secondCamera;
+    public Camera topDownCamera;
     public Vector3 targetRotation;
+    public GameObject camerTopDown;
+
+    [Header("Timer")]
+    public float timeRemaining = 30;
+    public bool timerIsRunning = false;
+    public bool startTimer = false;
 
     private void Start()
     {
         firstCamera.enabled = true;
         secondCamera.enabled = false;
+        topDownCamera.enabled = false;
+        timerIsRunning = true;
     }
     void LateUpdate()
     {
+        if (timerIsRunning)
+        {
+            if (timeRemaining >= 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+               
+                timeRemaining = 0;
+                //camerTopDown.SetActive(true);
+                topDownCamera.enabled = true;
+                firstCamera.enabled = false;
+                timerIsRunning = false;
+                startTimer = true;
+
+            }
+        }
+
         //transform.position = targetObject.position + cameraOffset;
         if (ShipMovement.shipSpeed != 0)
         {
