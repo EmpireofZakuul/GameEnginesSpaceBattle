@@ -10260,7 +10260,7 @@ MonoBehaviour:
   shipParent: {fileID: 242649357}
   shipStartPos: {fileID: 596465817}
   numberOfRows: 3
-  numberOfColumns: 12
+  numberOfColumns: 13
   numberOfBobjectsPerRow: 1
   amountOfSpaceBetweenObject: 340
 --- !u!4 &481171950

@@ -89,9 +89,9 @@ public class CameraFollow : MonoBehaviour
             changeTarget = false;
             GameManager.startMoving = true;
             Camera2.SetActive(true);
-            transform.Rotate(1.279f, -101.471f, 6.09f);
-            //StartCoroutine(LerpFunction(Quaternion.Euler(targetRotation), 3));
-            Invoke("LookAtEternalFleet", changeTargetTime);
+            //transform.Rotate(1.279f, -101.471f, 6.09f);
+            StartCoroutine(LerpFunction(Quaternion.Euler(targetRotation), 5));
+           //Invoke("LookAtEternalFleet", changeTargetTime);
         }   
         
     }
