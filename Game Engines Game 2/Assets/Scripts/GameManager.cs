@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public bool arrived = true;
     public bool startMoving = false;
     public bool audioOn = false;
-    public AudioManager AudioManager;
+   // public AudioManager AudioManager;
 
     public void Start()
     {
@@ -52,12 +52,12 @@ public class GameManager : MonoBehaviour
             arrived = false;
         }
 
-        if(shipCounter == 4 && !audioOn)
-        {
-            AudioManager.Play("DeployTheGarrision");
-            audioOn = true;
+       // if(shipCounter == 4 && !audioOn)
+        //{
+            //AudioManager.Play("DeployTheGarrision");
+           // audioOn = true;
            
-        }
+       // }
     }
     
            

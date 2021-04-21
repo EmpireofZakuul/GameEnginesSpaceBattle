@@ -23,11 +23,16 @@ public class CameraFollow : MonoBehaviour
     public Camera topDownCamera;
     public Vector3 targetRotation;
     public GameObject camerTopDown;
+    public bool notLookTarget = false;
 
     [Header("Timer")]
     public float timeRemaining = 30;
     public bool timerIsRunning = false;
     public bool startTimer = false;
+
+    public float soundTimeRemaining = 2;
+    public bool soundTimerIsRunning = false;
+    public AudioManager AudioManager;
 
     private void Start()
     {
@@ -56,47 +61,65 @@ public class CameraFollow : MonoBehaviour
 
             }
         }
-
-        //transform.position = targetObject.position + cameraOffset;
-        if (ShipMovement.shipSpeed != 0)
+        if (!notLookTarget)
         {
-            Vector3 desiredCameraPosition = targetObject.position + cameraOffset;
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredCameraPosition, smoothSpeed * Time.deltaTime);
-            transform.position = smoothedPosition;
+            //transform.position = targetObject.position + cameraOffset;
+            if (ShipMovement.shipSpeed != 0)
+            {
+                Vector3 desiredCameraPosition = targetObject.position + cameraOffset;
+                Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredCameraPosition, smoothSpeed * Time.deltaTime);
+                transform.position = smoothedPosition;
 
 
-            transform.LookAt(targetObject);
+                transform.LookAt(targetObject);
 
-        }
+            }
 
-        else if (ShipMovement.shipSpeed <= 10)
-        {
-            Vector3 newDesiredCameraPosition = targetObject.position + cameraOffsetNew;
-            Vector3 newCameraPosition = Vector3.Lerp(transform.position, newDesiredCameraPosition, smoothSpeedCameraPan * Time.deltaTime);
-            transform.position = newCameraPosition;
-
-
-            transform.LookAt(targetObject);
+            else if (ShipMovement.shipSpeed <= 10)
+            {
+                Vector3 newDesiredCameraPosition = targetObject.position + cameraOffsetNew;
+                Vector3 newCameraPosition = Vector3.Lerp(transform.position, newDesiredCameraPosition, smoothSpeedCameraPan * Time.deltaTime);
+                transform.position = newCameraPosition;
 
 
-            changeTarget = true;
-            //Invoke("LookAtEternalFleet", changeTargetTime);
+                transform.LookAt(targetObject);
+
+
+                changeTarget = true;
+                //Invoke("LookAtEternalFleet", changeTargetTime);
+            }
+
         }
 
 
         if (transform.position.x >= 74 && transform.position.y >= 45 && transform.position.z >= 8365 && changeTarget)
         {
             changeTarget = false;
-            GameManager.startMoving = true;
-            Camera2.SetActive(true);
+            notLookTarget = true;
+           GameManager.startMoving = true;
+           Camera2.SetActive(true);
             //transform.Rotate(1.279f, -101.471f, 6.09f);
-            StartCoroutine(LerpFunction(Quaternion.Euler(targetRotation), 5));
-           //Invoke("LookAtEternalFleet", changeTargetTime);
-        }   
-        
+            StartCoroutine(LerpCamera(Quaternion.Euler(targetRotation), 5));
+           Invoke("LookAtEternalFleet", changeTargetTime);
+        }
+
+        if (soundTimerIsRunning)
+        {
+            if (soundTimeRemaining > 0)
+            {
+                soundTimeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                AudioManager.Play("DeployTheGarrision");
+                soundTimeRemaining = 0;
+                soundTimerIsRunning = false;
+            }
+        }
+
     }
 
-    IEnumerator LerpFunction(Quaternion endValue, float duration)
+    IEnumerator LerpCamera(Quaternion endValue, float duration)
     {
         float time = 0;
         Quaternion startValue = transform.rotation;
@@ -107,6 +130,7 @@ public class CameraFollow : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
+        soundTimerIsRunning = true;
         transform.rotation = endValue;
     }
 

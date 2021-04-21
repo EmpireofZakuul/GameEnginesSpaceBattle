@@ -25,10 +25,14 @@ public class EmpireShipShooting : MonoBehaviour
     public int numberOfRows;
     public int numberOfColumns;
 
+    public float timeRemaining = 10;
+    public bool timerIsRunning = false;
+
     [Header("Ship audio")]
     public AudioSource AudioSource;
     public AudioSource AudioSource2;
     public bool audioOn = false;
+    public AudioManager AudioManager;
 
 
     ObjectPool objectPooler;
@@ -64,6 +68,7 @@ public class EmpireShipShooting : MonoBehaviour
                    
                     audioOn = true;
                     AudioSource2.Play();
+                    timerIsRunning = true;
                 }
                 
             }
@@ -81,6 +86,22 @@ public class EmpireShipShooting : MonoBehaviour
 
             }
         }
+
+        /*if (timerIsRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                
+                timeRemaining = 0;
+                timerIsRunning = false;
+                AudioManager.Play("MaximumFire");
+            }
+        }
+        */
 
     }
 

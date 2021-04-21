@@ -121,6 +121,8 @@ MonoBehaviour:
   bulletSpawn3: {fileID: 5951960581040569676}
   bulletSpawn4: {fileID: 6805752163252164214}
   speed: 50
+  timeRemaining: 20
+  timerIsRunning: 0
 --- !u!1 &4769165733745374820
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036382899905536252}
   - component: {fileID: 9114187619567012087}
+  - component: {fileID: 4141645291652533517}
   m_Layer: 8
   m_Name: Eternal Fleet2
   m_TagString: EternalEnemy
@@ -207,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 7704973258255301190}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1965, y: 28, z: 333}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children:
   - {fileID: 6185665937291459481}
   - {fileID: 8567555145741273360}
@@ -227,6 +230,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 274.70605, y: 158.19353, z: 322.47446}
   m_Center: {x: 85.59424, y: 0.1517334, z: -11.324921}
+--- !u!114 &4141645291652533517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7704973258255301190}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293ac6e6fa999ce43a95d2d037e8790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0.1
+  timeIsRunning: 0
 --- !u!1 &7899483100990666099
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class EmpireShipHealth : MonoBehaviour
     public GameManager game;
     public GameObject cameraHolder;
     public GameObject topDownCamera;
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +39,8 @@ public class EmpireShipHealth : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
         {
-            TakeDamage(7);
+            TakeDamage(7);     
+            
         }
     }
 
