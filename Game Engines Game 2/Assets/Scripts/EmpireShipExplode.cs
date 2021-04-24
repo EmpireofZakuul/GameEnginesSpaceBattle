@@ -23,9 +23,9 @@ public class EmpireShipExplode : MonoBehaviour
 
         health = maxHealth;
 
-       // GameObject.Find("Character").GetComponents<EternalFleet>();
-       // character = FindObjectOfType<EternalFleet>();
-       // character.isFound = true;
+       GameObject.Find("ShipHolder").GetComponents<EternalFleet>();
+       character = FindObjectOfType<EternalFleet>();
+       character.isFound = true;
     }
 
     // Update is called once per frame
@@ -80,6 +80,6 @@ public class EmpireShipExplode : MonoBehaviour
     public void Dead()
     {
         Instantiate(effect, transform.position, transform.rotation);
-        Destroy(destroy, .5f);
+        Destroy(destroy,.5f);
     }
 }
