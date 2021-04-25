@@ -40,13 +40,13 @@ public class EternalFleet : MonoBehaviour
   
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "EmpireEnemy")
-        {
-            TakeDamage(100);
-        }
-    }
+   // public void OnTriggerEnter(Collider other)
+    //{
+       // if (other.gameObject.tag == "EmpireEnemy")
+       // {
+           // TakeDamage(100);
+       // }
+   // }
 
     public void TakeDamage(int damage)
     {

@@ -10555,7 +10555,6 @@ GameObject:
   - component: {fileID: 481171949}
   - component: {fileID: 481171951}
   - component: {fileID: 481171952}
-  - component: {fileID: 481171953}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10612,7 +10611,7 @@ MonoBehaviour:
   - tag: Bullet
     prefab: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
       type: 3}
-    size: 1000
+    size: 1200
   - tag: Explosions
     prefab: {fileID: 3675263091104240395, guid: 1d95ca44b1b55c64391d672bce065516,
       type: 3}
@@ -10635,7 +10634,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipCounter: 5
   last: 0
-  ship: {fileID: 0}
   cameraEnd: {fileID: 434731653}
   holder: {fileID: 242649356}
   speed: 2300
@@ -10644,14 +10642,6 @@ MonoBehaviour:
   audioOn: 0
   timeRemaining: 1
   timerIsRunning: 0
---- !u!81 &481171953
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481171948}
-  m_Enabled: 0
 --- !u!1 &497170421
 GameObject:
   m_ObjectHideFlags: 0
@@ -15614,9 +15604,8 @@ MonoBehaviour:
   explode: 0
   destroy: {fileID: 586403537}
   dead: 0
-  maxHealth: 100
-  health: 0
   BlowRadius: 400
+  EmpireShipHealth: {fileID: 0}
 --- !u!1 &589910168
 GameObject:
   m_ObjectHideFlags: 0
@@ -15935,7 +15924,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194231}
   m_Layer: 0
@@ -15945,14 +15933,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -25783,7 +25763,6 @@ GameObject:
   - component: {fileID: 1195447623}
   - component: {fileID: 1195447622}
   - component: {fileID: 1195447621}
-  - component: {fileID: 1195447624}
   - component: {fileID: 1195447625}
   m_Layer: 0
   m_Name: CameraEternalFleet
@@ -25880,14 +25859,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!81 &1195447624
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195447620}
-  m_Enabled: 0
 --- !u!114 &1195447625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26169,9 +26140,8 @@ MonoBehaviour:
   explode: 0
   destroy: {fileID: 1386483033}
   dead: 0
-  maxHealth: 100
-  health: 0
   BlowRadius: 400
+  EmpireShipHealth: {fileID: 0}
 --- !u!1 &1446801435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8655266052092088925, guid: 803f8e5e43920b549991fafd92125200,
@@ -26574,9 +26544,8 @@ MonoBehaviour:
   explode: 0
   destroy: {fileID: 1635448199}
   dead: 0
-  maxHealth: 100
-  health: 0
   BlowRadius: 400
+  EmpireShipHealth: {fileID: 0}
 --- !u!1 &1677209651
 GameObject:
   m_ObjectHideFlags: 0
@@ -26754,7 +26723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799198178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1699, y: 300, z: 174}
+  m_LocalPosition: {x: 2386, y: 300, z: 174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 242649357}
@@ -26770,6 +26739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1886205715}
   - component: {fileID: 1886205714}
+  - component: {fileID: 1886205716}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -26802,6 +26772,42 @@ MonoBehaviour:
     pitch: 1
     SpatialBlend: 0
     source: {fileID: 0}
+  - name: 180degrees
+    clip: {fileID: 8300000, guid: b831b705822a3ce4d811e5adadda23cb, type: 3}
+    volume: 0.3
+    pitch: 1
+    SpatialBlend: 0
+    source: {fileID: 0}
+  - name: DeployTheGarrision
+    clip: {fileID: 8300000, guid: 8c4e560802752dc4eb8393afba4df33c, type: 3}
+    volume: 0.3
+    pitch: 1
+    SpatialBlend: 0
+    source: {fileID: 0}
+  - name: emperor
+    clip: {fileID: 8300000, guid: 64c12b47d82c8a24aa658b0b83171a19, type: 3}
+    volume: 0.3
+    pitch: 1
+    SpatialBlend: 0
+    source: {fileID: 0}
+  - name: engines
+    clip: {fileID: 8300000, guid: 4a0c2e2961a50c342bb8374dcd99748d, type: 3}
+    volume: 0.3
+    pitch: 1
+    SpatialBlend: 0
+    source: {fileID: 0}
+  - name: raiseShields
+    clip: {fileID: 8300000, guid: b020455155f61f546b39d9f468f51221, type: 3}
+    volume: 0.3
+    pitch: 1
+    SpatialBlend: 0
+    source: {fileID: 0}
+  - name: probe
+    clip: {fileID: 8300000, guid: c624873fd6dfda0489f25ecee650d030, type: 3}
+    volume: 0.3
+    pitch: 1
+    SpatialBlend: 0
+    source: {fileID: 0}
 --- !u!4 &1886205715
 Transform:
   m_ObjectHideFlags: 0
@@ -26816,6 +26822,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1886205716
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886205713}
+  m_Enabled: 1
 --- !u!1001 &1904967707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27413,9 +27427,8 @@ MonoBehaviour:
   explode: 0
   destroy: {fileID: 2038558346}
   dead: 0
-  maxHealth: 100
-  health: 0
   BlowRadius: 400
+  EmpireShipHealth: {fileID: 0}
 --- !u!1 &2059733574
 GameObject:
   m_ObjectHideFlags: 0
@@ -27488,9 +27501,8 @@ MonoBehaviour:
   explode: 0
   destroy: {fileID: 2103202209}
   dead: 0
-  maxHealth: 100
-  health: 0
   BlowRadius: 400
+  EmpireShipHealth: {fileID: 0}
 --- !u!1001 &8420824534618142065
 PrefabInstance:
   m_ObjectHideFlags: 0

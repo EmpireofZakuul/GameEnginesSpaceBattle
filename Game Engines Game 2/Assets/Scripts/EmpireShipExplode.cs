@@ -7,36 +7,20 @@ public class EmpireShipExplode : MonoBehaviour
     [Header("Enemy Explode")]
     public Transform effect;
     public bool explode = false;
-    //public GameObject theObjectToBeUnParented;
     public GameObject destroy;
     public bool dead = false;
-    [Header("Enemy Health")]
-    public int maxHealth = 100;
-    public int health;
+ 
     public float BlowRadius = 6f;
     private EternalFleet character;
+    public EmpireShipHealth EmpireShipHealth;
 
 
     // Start is called before the first frame update
     void OnEnable()
     {
-
-        health = maxHealth;
-
-       GameObject.Find("ShipHolder").GetComponents<EternalFleet>();
-       character = FindObjectOfType<EternalFleet>();
-       character.isFound = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (health <= 0 && !explode)
-        {  
-            explode = true;
-            Dead();
-        }
-
+        GameObject.Find("ShipHolder").GetComponents<EternalFleet>();
+        character = FindObjectOfType<EternalFleet>();
+        character.isFound = true;
     }
 
 
@@ -44,16 +28,16 @@ public class EmpireShipExplode : MonoBehaviour
     {
         if (other.gameObject.tag == "EternalEnemy")
         {
-            TakeDamage(100);
+            
+            EmpireShipHealth.health = 0;
+          
+            Explode();
         }
 
 
     }
 
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-    }
+
     public void Explode()
     {
 
@@ -77,9 +61,5 @@ public class EmpireShipExplode : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, BlowRadius);
     }
 
-    public void Dead()
-    {
-        Instantiate(effect, transform.position, transform.rotation);
-        Destroy(destroy,.5f);
-    }
+   
 }

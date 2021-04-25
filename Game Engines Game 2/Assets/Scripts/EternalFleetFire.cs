@@ -31,8 +31,10 @@ public class EternalFleetFire : MonoBehaviour
     [Header("Timer")]
     public float timeRemaining = 20;
     public bool timerIsRunning = false;
-
+    public float timerStopCount = 0;
+    
     ObjectPool objectPooler;
+    public bool character;
 
     // Start is called before the first frame update
     void Start()
@@ -70,7 +72,7 @@ public class EternalFleetFire : MonoBehaviour
 
         }
 
-       /* if (timerIsRunning)
+        if (timerIsRunning)
         {
             if (timeRemaining >= 0)
             {
@@ -78,15 +80,18 @@ public class EternalFleetFire : MonoBehaviour
             }
             else
             {
-
+                timerStopCount++;
                 timeRemaining = 20;
                 targetFound = false;
                 //timerIsRunning = false;
 
             }
         }
-       */
-
+       
+        if(timerStopCount == 4)
+        {
+            timerIsRunning = false;
+        }
 
     }
 

@@ -48,11 +48,12 @@ public class EmpireShipHealth : MonoBehaviour
             explode = false;
         }
 
-        if ( !explode)//testing
+        /*if ( !explode)//testing
         {
             Dead();
             explode = true;
         }
+        */
     }
 
     public void OnTriggerEnter(Collider other)

@@ -40,6 +40,7 @@ public class CameraFollow : MonoBehaviour
         secondCamera.enabled = false;
         topDownCamera.enabled = false;
         timerIsRunning = true;
+        StartCoroutine(SoundEffect());
     }
     void LateUpdate()
     {
@@ -58,6 +59,7 @@ public class CameraFollow : MonoBehaviour
                 firstCamera.enabled = false;
                 timerIsRunning = false;
                 startTimer = true;
+               // AudioManager.Play("emperor");
 
             }
         }
@@ -117,6 +119,15 @@ public class CameraFollow : MonoBehaviour
             }
         }
 
+    }
+    IEnumerator SoundEffect()
+    {
+        yield return new WaitForSeconds(15f);
+        AudioManager.Play("emperor");
+        yield return new WaitForSeconds(20f);
+        AudioManager.Play("probe");
+        yield return new WaitForSeconds(15f);
+        AudioManager.Play("raiseShields");
     }
 
     IEnumerator LerpCamera(Quaternion endValue, float duration)
