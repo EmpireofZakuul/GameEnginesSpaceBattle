@@ -11,15 +11,15 @@ public class EmpireShipExplode : MonoBehaviour
     public bool dead = false;
  
     public float BlowRadius = 6f;
-    private EternalFleet character;
+    private EternalFleetHealth character;
     public EmpireShipHealth EmpireShipHealth;
 
 
     // Start is called before the first frame update
-    void OnEnable()
+    void start()
     {
-        GameObject.Find("ShipHolder").GetComponents<EternalFleet>();
-        character = FindObjectOfType<EternalFleet>();
+        GameObject.Find("ShipHolder").GetComponents<EternalFleetHealth>();
+        character = FindObjectOfType<EternalFleetHealth>();
         character.isFound = true;
     }
 
@@ -29,7 +29,7 @@ public class EmpireShipExplode : MonoBehaviour
         if (other.gameObject.tag == "EternalEnemy")
         {
             
-            EmpireShipHealth.health = 0;
+            EmpireShipHealth.TakeDamage(1000);
           
             Explode();
         }
@@ -48,7 +48,7 @@ public class EmpireShipExplode : MonoBehaviour
         {
             if (coll[i].gameObject.GetComponent<EternalFleet>())
             {
-                character.TakeDamage(100);
+                character.TakeDamageEnemy(100);
             }
         }
 

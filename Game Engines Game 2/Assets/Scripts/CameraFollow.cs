@@ -126,8 +126,7 @@ public class CameraFollow : MonoBehaviour
         AudioManager.Play("emperor");
         yield return new WaitForSeconds(20f);
         AudioManager.Play("probe");
-        yield return new WaitForSeconds(15f);
-        AudioManager.Play("raiseShields");
+       
     }
 
     IEnumerator LerpCamera(Quaternion endValue, float duration)

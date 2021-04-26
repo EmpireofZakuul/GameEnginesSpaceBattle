@@ -11,6 +11,7 @@ public class EmpireShipHealth : MonoBehaviour
     public Transform effect;
    // public GameManager game;
     public GameObject cameraHolder;
+    public Transform brokenShip;
     public GameObject topDownCamera;
     public bool stop = false;
     public float timeRemaining = 1;
@@ -74,9 +75,11 @@ public class EmpireShipHealth : MonoBehaviour
     {
        
         Instantiate(effect, transform.position, transform.rotation);
+        //Instantiate(brokenShip, transform.position, transform.rotation);
         Destroy(cameraHolder);
         Destroy(topDownCamera);
-        Destroy(gameObject,.5f);
+        Destroy(gameObject);
+        Instantiate(brokenShip, transform.position, transform.rotation);
         GameManager.Instance.shipCounter--;
     }
 }

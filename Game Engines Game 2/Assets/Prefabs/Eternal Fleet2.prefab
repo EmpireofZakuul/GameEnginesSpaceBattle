@@ -123,6 +123,8 @@ MonoBehaviour:
   speed: 50
   timeRemaining: 20
   timerIsRunning: 0
+  timerStopCount: 0
+  character: 0
 --- !u!1 &4769165733745374820
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,6 +196,7 @@ GameObject:
   - component: {fileID: 7036382899905536252}
   - component: {fileID: 9114187619567012087}
   - component: {fileID: 4141645291652533517}
+  - component: {fileID: 285693200823260243}
   m_Layer: 8
   m_Name: Eternal Fleet2
   m_TagString: EternalEnemy
@@ -244,6 +247,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 0.1
   timeIsRunning: 0
+--- !u!114 &285693200823260243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7704973258255301190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad49f27f69c2ef4fb0609adb98e0e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
+  explode: 0
+  effect: {fileID: 2652530741742366411, guid: ebeaffe1a8257d84cbc4531bbdc9d00f, type: 3}
+  isFound: 0
 --- !u!1 &7899483100990666099
 GameObject:
   m_ObjectHideFlags: 0
