@@ -20,8 +20,8 @@ public class EmpireShipShooting : MonoBehaviour
     public Transform bulletSpawn;
     public float speed = 20;
 
-    public GameObject[] empties;
-    public GameObject[,] fireSquence;
+   // public GameObject[] empties;
+    public GameObject[,] fireSquence;  
     public int numberOfRows;
     public int numberOfColumns;
 

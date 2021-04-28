@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 9114187619567012087}
   - component: {fileID: 4141645291652533517}
   - component: {fileID: 285693200823260243}
+  - component: {fileID: 3472490604509971044}
   m_Layer: 8
   m_Name: Eternal Fleet2
   m_TagString: EternalEnemy
@@ -264,6 +265,22 @@ MonoBehaviour:
   explode: 0
   effect: {fileID: 2652530741742366411, guid: ebeaffe1a8257d84cbc4531bbdc9d00f, type: 3}
   isFound: 0
+--- !u!54 &3472490604509971044
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7704973258255301190}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &7899483100990666099
 GameObject:
   m_ObjectHideFlags: 0

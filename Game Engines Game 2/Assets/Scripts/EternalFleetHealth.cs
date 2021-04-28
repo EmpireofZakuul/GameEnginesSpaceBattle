@@ -35,6 +35,7 @@ public class EternalFleetHealth : MonoBehaviour
     {
 
         Instantiate(effect, transform.position, transform.rotation);
+        Destroy(gameObject);
       
     }
 }

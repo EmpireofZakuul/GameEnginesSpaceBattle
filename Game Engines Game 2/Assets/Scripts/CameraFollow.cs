@@ -124,7 +124,7 @@ public class CameraFollow : MonoBehaviour
     {
         yield return new WaitForSeconds(15f);
         AudioManager.Play("emperor");
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(30f);
         AudioManager.Play("probe");
        
     }

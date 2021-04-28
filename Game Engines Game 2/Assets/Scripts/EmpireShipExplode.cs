@@ -4,31 +4,29 @@ using UnityEngine;
 
 public class EmpireShipExplode : MonoBehaviour
 {
-    [Header("Enemy Explode")]
-    public Transform effect;
-    public bool explode = false;
-    public GameObject destroy;
-    public bool dead = false;
- 
+
     public float BlowRadius = 6f;
-    private EternalFleetHealth character;
+   // private EternalFleetHealth character;
     public EmpireShipHealth EmpireShipHealth;
+  
+   
 
 
     // Start is called before the first frame update
-    void start()
+    void OnEnable()
     {
-        GameObject.Find("ShipHolder").GetComponents<EternalFleetHealth>();
-        character = FindObjectOfType<EternalFleetHealth>();
-        character.isFound = true;
+        //GameObject.Find("Eternal Fleet2").GetComponents<EternalFleetHealth>();
+        //eternalFleetHealth = FindObjectOfType<EternalFleetHealth>();
+       // eternalFleetHealth.isFound = true;
+        
     }
 
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "EternalEnemy")
+        if (other.gameObject.tag == "EternalEnemy" || other.gameObject.layer == 8)
         {
-            
+            Debug.Log("hit ship");
             EmpireShipHealth.TakeDamage(1000);
           
             Explode();
@@ -40,15 +38,15 @@ public class EmpireShipExplode : MonoBehaviour
 
     public void Explode()
     {
-
+        Debug.Log("Explode");
 
         Collider[] coll = Physics.OverlapSphere(transform.position, BlowRadius);
 
         for (int i = 0; i < coll.Length; i++)
         {
-            if (coll[i].gameObject.GetComponent<EternalFleet>())
+            if (coll[i].gameObject.GetComponent<EternalFleetHealth>())
             {
-                character.TakeDamageEnemy(100);
+                coll[i].gameObject.GetComponent<EternalFleetHealth>().TakeDamageEnemy(100);
             }
         }
 

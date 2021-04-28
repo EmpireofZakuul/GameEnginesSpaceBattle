@@ -15,7 +15,10 @@ public class GameManager : MonoBehaviour
     public bool audioOn = false;
     public float timeRemaining = 1;
     public bool timerIsRunning = false;
-
+    public Camera finalCamera;
+    public Camera SecondCamera;
+    public float smoothSpeed = 10f;
+    public Vector3 cameraOffset;
     public static GameManager Instance { get; private set; }
     
 
@@ -32,7 +35,9 @@ public class GameManager : MonoBehaviour
 
         timerIsRunning = true;
         holder.SetActive(false);
-       
+        finalCamera.enabled = false;
+
+
     }
     // Update is called once per frame
     void Update()
@@ -50,8 +55,11 @@ public class GameManager : MonoBehaviour
                     ship.GetComponent<ShipMovement>().pathFollowingEnabled = false;
                     ship.GetComponent<ShipMovement>().seekEnabled = true;
                     ship.GetComponent<EmpireShipHealth>().maxHealth = 1000;
+                    finalCamera.enabled = true;
+                    SecondCamera.enabled = false;
                     last = true;
                     timeRemaining = 0;
+               
                   
                 }
 
@@ -70,6 +78,24 @@ public class GameManager : MonoBehaviour
             holder.SetActive(true);
             arrived = false;
         }
+
+
+
+        /*if (last)
+        {
+            Vector3 desiredCameraPosition = ship.transform.position + cameraOffset;
+            Vector3 smoothedPosition = Vector3.Lerp(ship.transform.position, desiredCameraPosition, smoothSpeed * Time.deltaTime);
+            ship.transform.position = smoothedPosition;
+
+
+            transform.LookAt(ship.transform);
+
+        }
+        else if (shipCounter == 0)
+        {
+            last = false;
+        }
+        */
 
 
     }
