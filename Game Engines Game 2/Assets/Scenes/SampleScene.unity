@@ -5016,7 +5016,7 @@ PrefabInstance:
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: maxHealth
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
@@ -10138,7 +10138,7 @@ PrefabInstance:
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: maxHealth
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
@@ -10683,6 +10683,7 @@ MonoBehaviour:
   SecondCamera: {fileID: 1195447622}
   smoothSpeed: 10
   cameraOffset: {x: 0, y: 0, z: 200}
+  AudioManager: {fileID: 1886205714}
 --- !u!1 &497170421
 GameObject:
   m_ObjectHideFlags: 0
@@ -26982,6 +26983,12 @@ MonoBehaviour:
     pitch: 1
     SpatialBlend: 0
     source: {fileID: 0}
+  - name: BackGroundMusic
+    clip: {fileID: 8300000, guid: 7bf54790dd467db48b379cd40e7bb07e, type: 3}
+    volume: 0.3
+    pitch: 1
+    SpatialBlend: 0
+    source: {fileID: 0}
 --- !u!4 &1886205715
 Transform:
   m_ObjectHideFlags: 0
@@ -27033,7 +27040,7 @@ PrefabInstance:
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: maxHealth
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
@@ -27350,7 +27357,7 @@ PrefabInstance:
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: maxHealth
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
@@ -27774,7 +27781,7 @@ PrefabInstance:
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: maxHealth
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}

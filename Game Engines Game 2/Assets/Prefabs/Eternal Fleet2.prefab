@@ -264,6 +264,8 @@ MonoBehaviour:
   health: 0
   explode: 0
   effect: {fileID: 2652530741742366411, guid: ebeaffe1a8257d84cbc4531bbdc9d00f, type: 3}
+  brokenShip: {fileID: 4932843202305705545, guid: c7389c0a4a6a32b489ebc0c392bba21a,
+    type: 3}
   isFound: 0
 --- !u!54 &3472490604509971044
 Rigidbody:

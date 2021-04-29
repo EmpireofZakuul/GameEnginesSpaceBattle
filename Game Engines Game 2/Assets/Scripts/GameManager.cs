@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public Camera SecondCamera;
     public float smoothSpeed = 10f;
     public Vector3 cameraOffset;
+    public AudioManager AudioManager;
     public static GameManager Instance { get; private set; }
     
 
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
         holder.SetActive(false);
         finalCamera.enabled = false;
 
-
+        AudioManager.Play("BackGroundMusic");
     }
     // Update is called once per frame
     void Update()

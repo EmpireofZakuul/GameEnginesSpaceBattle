@@ -9,6 +9,7 @@ public class EternalFleetHealth : MonoBehaviour
     public int health;
     public bool explode;
     public Transform effect;
+    public Transform brokenShip;
     public bool isFound;
     // Start is called before the first frame update
     void OnEnable()
@@ -35,6 +36,7 @@ public class EternalFleetHealth : MonoBehaviour
     {
 
         Instantiate(effect, transform.position, transform.rotation);
+        Instantiate(brokenShip, transform.position, transform.rotation);
         Destroy(gameObject);
       
     }
