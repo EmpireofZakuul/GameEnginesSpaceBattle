@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 7606235255715539617}
   - component: {fileID: 4518653575247689049}
   - component: {fileID: 8655412226966883106}
+  - component: {fileID: 325158803905949583}
   m_Layer: 0
   m_Name: fighter
   m_TagString: Enemy
@@ -132,7 +133,7 @@ BoxCollider:
   m_GameObject: {fileID: 1670722854352443540}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.5509186, y: 2.169548, z: 3.7920532}
   m_Center: {x: -0.0012741089, y: 0.39365768, z: 0.85098267}
@@ -170,9 +171,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -214,7 +215,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.9
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -261,7 +262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670722854352443540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 866abc2934e3ab543931788bc5cde832, type: 3}
   m_Name: 
@@ -282,6 +283,19 @@ MonoBehaviour:
   health: 0
   explode: 0
   effect: {fileID: 3675263091104240392, guid: 1d95ca44b1b55c64391d672bce065516, type: 3}
+--- !u!114 &325158803905949583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670722854352443540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b65a7e410d04b409ef47789ff91aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 0}
 --- !u!1 &2979091421263031237
 GameObject:
   m_ObjectHideFlags: 0

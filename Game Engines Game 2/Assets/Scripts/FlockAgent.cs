@@ -6,16 +6,21 @@ using UnityEngine;
 public class FlockAgent : MonoBehaviour
 {
     Collider agentCollider;
+  
     public Collider AgentCollider { get{ return agentCollider;}}
-
 
     // Start is called before the first frame update
     void Start()
     {
         agentCollider = GetComponent<Collider>();
+       
+    }
+    public void Update()
+    {
+       
     }
 
-   public void MoveShip(Vector3 velocity)
+    public void MoveShip(Vector3 velocity)
    {
     transform.forward = velocity;
     transform.position += velocity * Time.deltaTime;
@@ -23,5 +28,5 @@ public class FlockAgent : MonoBehaviour
        
     }
 
-  
+ 
 }

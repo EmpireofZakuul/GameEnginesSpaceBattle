@@ -23,7 +23,7 @@ public class SteeredCohesion : FlockBehaviour
 
 
             cohesionFlockMove -= agent.transform.position;
-            cohesionFlockMove = Vector3.SmoothDamp(agent.transform.up, cohesionFlockMove, ref currentVelocity, agentSmootedTime);
+            cohesionFlockMove = Vector3.SmoothDamp(agent.transform.forward, cohesionFlockMove, ref currentVelocity, agentSmootedTime);
             return cohesionFlockMove;
 
         }

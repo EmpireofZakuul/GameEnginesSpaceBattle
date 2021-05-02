@@ -27,6 +27,8 @@ public class Flock : MonoBehaviour
     float _squaredMaxSpeed;
     public float _squaredAdvanceRadius { get { return _neighborRadiusSquared; } }
 
+  //  public Transform target;
+   // public bool getTarget = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +56,7 @@ public class Flock : MonoBehaviour
     
  
     // Update is called once per frame
-      void Update()
+      void FixedUpdate()
       { 
 
        foreach(FlockAgent agent in agents)
@@ -68,10 +70,16 @@ public class Flock : MonoBehaviour
                 shipMove = shipMove.normalized * ShipMaxSpeed;
             }
             agent.MoveShip(shipMove);
+
+          //  if (getTarget)
+           // {
+              //  agent.TargetShip();
+           // }
         }
 
-
-    }
+       
+       
+      }
 
   
    List<Transform> GetNearByObjects(FlockAgent agent)
