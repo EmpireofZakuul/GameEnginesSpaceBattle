@@ -33,6 +33,7 @@ public class CameraFollow : MonoBehaviour
     public float soundTimeRemaining = 2;
     public bool soundTimerIsRunning = false;
     public AudioManager AudioManager;
+    public FighterSpawn fighterSpawn;
 
     private void Start()
     {
@@ -116,6 +117,7 @@ public class CameraFollow : MonoBehaviour
                 AudioManager.Play("DeployTheGarrision");
                 soundTimeRemaining = 0;
                 soundTimerIsRunning = false;
+                fighterSpawn.spawning = true;
             }
         }
 

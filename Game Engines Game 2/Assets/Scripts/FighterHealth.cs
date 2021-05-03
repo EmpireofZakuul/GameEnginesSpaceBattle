@@ -46,7 +46,7 @@ public class FighterHealth : MonoBehaviour
     public void Dead()
     {
         Instantiate(effect, transform.position, transform.rotation);
-        gameObject.SetActive(false);
-        //Destroy(gameObject, 1f);
+        //gameObject.SetActive(false);
+        Destroy(gameObject, 1f);
     }
 }

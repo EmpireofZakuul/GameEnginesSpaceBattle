@@ -35,13 +35,17 @@ public class EternalFleetFire : MonoBehaviour
     
     ObjectPool objectPooler;
     public bool character;
+    public bool shooting = true;
+    public bool turnShooting = true;
+    private GameManager spawn;
 
     // Start is called before the first frame update
     void Start()
     {
         objectPooler = ObjectPool.Instance;
         timerIsRunning = true;
-
+        spawn = FindObjectOfType<GameManager>();
+        
 
     }
 
@@ -93,6 +97,13 @@ public class EternalFleetFire : MonoBehaviour
             timerIsRunning = false;
         }
 
+        if(spawn.shipCounter == 0 && turnShooting)
+        {
+            shooting = false;
+            turnShooting = false;
+        }
+
+
     }
 
     public void RotateTurrets(Transform target)
@@ -125,7 +136,7 @@ public class EternalFleetFire : MonoBehaviour
     {
 
        // GunFiringLoop = true;
-        while (true)
+        while (shooting)
         {
             GunFiringLoop = true;
             objectPooler.SpawnFromPool("Bullet", bulletSpawn.position, bulletSpawn.rotation);

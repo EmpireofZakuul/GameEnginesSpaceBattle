@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FighterMovement : MonoBehaviour
 {
-    public FighterSpawn spawn;
+    private FighterSpawn spawn;
     // Start is called before the first frame update
     void Start()
     {

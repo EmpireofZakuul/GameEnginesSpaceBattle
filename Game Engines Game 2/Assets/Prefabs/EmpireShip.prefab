@@ -142,16 +142,80 @@ MonoBehaviour:
   GunsRotated: 0
   GunFiringLoop: 0
   fireRate: 5
+  GunfireRate: 4
   projectile: {fileID: 7370690413418456085, guid: 0ddb2a21835aa034489bf68e7d48c04e,
     type: 3}
-  bulletSpawn: {fileID: 8420824534082549043}
   speed: 50
-  empties: []
-  numberOfRows: 2
-  numberOfColumns: 4
+  bulletSpawn: {fileID: 8420824534082549043}
+  bulletSpawn1: {fileID: 0}
+  bulletSpawn2: {fileID: 0}
+  bulletSpawn3: {fileID: 0}
+  bulletSpawn4: {fileID: 0}
+  bulletSpawn5: {fileID: 0}
+  bulletSpawn6: {fileID: 0}
+  bulletSpawn7: {fileID: 0}
+  bulletSpawn8: {fileID: 0}
+  bulletSpawn9: {fileID: 0}
+  bulletSpawn10: {fileID: 0}
+  bulletSpawn11: {fileID: 0}
+  bulletSpawn12: {fileID: 0}
+  bulletSpawn13: {fileID: 0}
+  bulletSpawn14: {fileID: 0}
+  bulletSpawn15: {fileID: 0}
+  bulletSpawn16: {fileID: 0}
+  bulletSpawn17: {fileID: 0}
+  bulletSpawn18: {fileID: 0}
+  bulletSpawn19: {fileID: 0}
+  bulletSpawn20: {fileID: 0}
+  bulletSpawn21: {fileID: 0}
+  bulletSpawn22: {fileID: 0}
+  bulletSpawn23: {fileID: 0}
+  bulletSpawn24: {fileID: 0}
+  bulletSpawn25: {fileID: 0}
+  bulletSpawn26: {fileID: 0}
+  bulletSpawn27: {fileID: 0}
+  bulletSpawn28: {fileID: 0}
+  bulletSpawn29: {fileID: 0}
+  bulletSpawn30: {fileID: 0}
+  bulletSpawn31: {fileID: 0}
+  bulletSpawn32: {fileID: 0}
+  bulletSpawn33: {fileID: 0}
+  bulletSpawn34: {fileID: 0}
+  bulletSpawn35: {fileID: 0}
+  bulletSpawn36: {fileID: 0}
+  bulletSpawn37: {fileID: 0}
+  bulletSpawn38: {fileID: 0}
+  bulletSpawn39: {fileID: 0}
+  bulletSpawn40: {fileID: 0}
+  bulletSpawn41: {fileID: 0}
+  bulletSpawn42: {fileID: 0}
+  bulletSpawn43: {fileID: 0}
+  bulletSpawn44: {fileID: 0}
+  bulletSpawn45: {fileID: 0}
+  bulletSpawn46: {fileID: 0}
+  bulletSpawn47: {fileID: 0}
+  bulletSpawn48: {fileID: 0}
+  bulletSpawn49: {fileID: 0}
+  bulletSpawn50: {fileID: 0}
+  bulletSpawn51: {fileID: 0}
+  bulletSpawn52: {fileID: 0}
+  bulletSpawn53: {fileID: 0}
+  bulletSpawn54: {fileID: 0}
+  bulletSpawn55: {fileID: 0}
+  bulletSpawn56: {fileID: 0}
+  bulletSpawn57: {fileID: 0}
+  bulletSpawn58: {fileID: 0}
+  bulletSpawn59: {fileID: 0}
+  bulletSpawn60: {fileID: 0}
+  bulletSpawn61: {fileID: 0}
+  bulletSpawn62: {fileID: 0}
+  bulletSpawn63: {fileID: 0}
+  timeRemaining: 10
+  timerIsRunning: 0
   AudioSource: {fileID: 903498918377446392}
   AudioSource2: {fileID: 5015374331043762685}
   audioOn: 0
+  AudioManager: {fileID: 0}
 --- !u!82 &903498918377446392
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2163,7 +2227,12 @@ MonoBehaviour:
   health: 0
   explode: 1
   effect: {fileID: 2652530741742366411, guid: ebeaffe1a8257d84cbc4531bbdc9d00f, type: 3}
-  game: {fileID: 0}
+  cameraHolder: {fileID: 0}
+  brokenShip: {fileID: 0}
+  topDownCamera: {fileID: 0}
+  stop: 0
+  timeRemaining: 1
+  timerIsRunning: 0
 --- !u!82 &4489797290950419073
 AudioSource:
   m_ObjectHideFlags: 0

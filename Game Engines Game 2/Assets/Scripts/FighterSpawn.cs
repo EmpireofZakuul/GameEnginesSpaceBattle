@@ -5,13 +5,15 @@ using UnityEngine;
 public class FighterSpawn : MonoBehaviour
 {
     public int enemyAmoundMax = 10;
-    public int totalcount = 0;
+    public int totalcount = 100;
+    public int count = 0;
     public GameObject enemyPrefab;
     public GameObject[] spawnPoints;
     private GameObject currentPoint;
     private int EnemyIndex;
     public bool isFound;
     public bool spawning = false;
+    public float waitTime = 1;
 
     public void OnEnable()
     {
@@ -33,14 +35,14 @@ public class FighterSpawn : MonoBehaviour
 
     IEnumerator SpawnFigters()
     {
-       while(totalcount <= 20)
+       while(count < totalcount)
        {
             EnemyIndex = Random.Range(0, spawnPoints.Length);
             currentPoint = spawnPoints[EnemyIndex];
             enemyPrefab = Instantiate(enemyPrefab, currentPoint.transform.position, currentPoint.transform.rotation) as GameObject;
-            totalcount++;
+            count++;
             enemyPrefab.transform.parent = gameObject.transform;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(waitTime);
        }
 
     }
