@@ -22,7 +22,7 @@ public class EmpireFighterFiring : MonoBehaviour
     #endregion
 
     #region FIGHTER TARGETING
-    //public Transform Target;
+    public Transform Target;
     public float AttackRange = 35;
     public bool inRange;
     public float TooClose = 10;
@@ -43,13 +43,13 @@ public class EmpireFighterFiring : MonoBehaviour
         GameObject.Find("Spawn").GetComponents<FighterSpawn>();
         spawn = FindObjectOfType<FighterSpawn>();
         spawn.isFound = true;
-        
+        Target = GameObject.FindWithTag("Finish").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*float distance = Vector3.Distance(transform.position, Target.position);
+        float distance = Vector3.Distance(transform.position, Target.position);
    
             if (distance <= AttackRange)
             {
@@ -65,7 +65,7 @@ public class EmpireFighterFiring : MonoBehaviour
                 }
 
             }
-        */
+        
 
       
 
@@ -91,5 +91,10 @@ public class EmpireFighterFiring : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, TooClose);
+    }
+
+    private void Move()
+    {
+        
     }
 }

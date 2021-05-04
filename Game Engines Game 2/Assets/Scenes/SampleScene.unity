@@ -151,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7713252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1601, y: -289, z: 815}
+  m_LocalPosition: {x: 1601, y: 110, z: 815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 115284571}
@@ -5074,6 +5074,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 115284571}
+  - component: {fileID: 115284572}
   m_Layer: 0
   m_Name: FighterWaypoints
   m_TagString: Untagged
@@ -5089,7 +5090,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115284570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 142, y: 0, z: 6637}
+  m_LocalPosition: {x: 2102, y: -226, z: 5942}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1324225091}
@@ -5101,6 +5102,23 @@ Transform:
   m_Father: {fileID: 1250450724}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115284572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115284570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c64f032fd4622848a839ad609a6f27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1324225091}
+  - {fileID: 504263880}
+  - {fileID: 148861235}
+  - {fileID: 1715875905}
 --- !u!4 &122529892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8420824534376658640, guid: 803f8e5e43920b549991fafd92125200,
@@ -5149,7 +5167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148861234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 296, y: -289, z: 12}
+  m_LocalPosition: {x: 1345, y: 110, z: 708}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 115284571}
@@ -11938,7 +11956,7 @@ MonoBehaviour:
   audioOn: 0
   timeRemaining: 1
   timerIsRunning: 0
-  finalCamera: {fileID: 1254400305}
+  finalCamera: {fileID: 1254400302}
   SecondCamera: {fileID: 1195447622}
   smoothSpeed: 10
   cameraOffset: {x: 0, y: 0, z: 200}
@@ -11973,7 +11991,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483929220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1597, y: -289, z: 15}
+  m_LocalPosition: {x: 1597, y: 110, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 115284571}
@@ -12109,7 +12127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504263879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 403, y: -289, z: 815}
+  m_LocalPosition: {x: -510, y: 110, z: 791}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 115284571}
@@ -27972,6 +27990,7 @@ GameObject:
   - component: {fileID: 1254400305}
   - component: {fileID: 1254400304}
   - component: {fileID: 1254400303}
+  - component: {fileID: 1254400307}
   m_Layer: 0
   m_Name: FinalCamera
   m_TagString: Untagged
@@ -28042,7 +28061,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 2000
+  far clip plane: 4000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -28069,12 +28088,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254400302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1956.625, y: 110, z: 6030}
+  m_LocalPosition: {x: 1976.7, y: 98.1, z: 6030}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1254400307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254400302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b65a7e410d04b409ef47789ff91aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointRoutes:
+  - {fileID: 115284571}
+  param: 0
+  speedModifier: 0.04
+  target: {fileID: 1386483036}
 --- !u!4 &1261649697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8420824533057775487, guid: 803f8e5e43920b549991fafd92125200,
@@ -28211,7 +28247,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -28223,7 +28259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324225090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1003, y: -418, z: 1084}
+  m_LocalPosition: {x: -946, y: -91, z: 454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 115284571}
@@ -28428,6 +28464,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 136.3947, y: 52.498245, z: 561.79846}
   m_Center: {x: 92.96558, y: -11.009666, z: 91.19891}
+--- !u!4 &1386483036 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8420824534217881092, guid: 803f8e5e43920b549991fafd92125200,
+    type: 3}
+  m_PrefabInstance: {fileID: 1904967707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1386483038 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
@@ -29256,7 +29298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715875904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 999, y: -418, z: -173}
+  m_LocalPosition: {x: 7, y: 110, z: 47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 115284571}
@@ -29451,7 +29493,7 @@ GameObject:
   - component: {fileID: 1799198179}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29678,6 +29720,12 @@ MonoBehaviour:
   - name: BackGroundMusic
     clip: {fileID: 8300000, guid: 7bf54790dd467db48b379cd40e7bb07e, type: 3}
     volume: 0.3
+    pitch: 1
+    SpatialBlend: 0
+    source: {fileID: 0}
+  - name: Explode
+    clip: {fileID: 8300000, guid: c2682ccdfc8816742a25bc69159802c1, type: 3}
+    volume: 0.2
     pitch: 1
     SpatialBlend: 0
     source: {fileID: 0}

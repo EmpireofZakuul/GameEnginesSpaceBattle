@@ -63,7 +63,7 @@ public class EternalFleetFire : MonoBehaviour
 
             if (hit.collider.gameObject.tag == "EmpireEnemy")
             {
-                Debug.Log(hit.point);
+               // Debug.Log(hit.point);
 
                 if (!targetFound)
                 {

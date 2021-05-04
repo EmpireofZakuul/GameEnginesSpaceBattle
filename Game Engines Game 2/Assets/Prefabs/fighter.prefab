@@ -94,7 +94,6 @@ GameObject:
   - component: {fileID: 7606235255715539617}
   - component: {fileID: 4518653575247689049}
   - component: {fileID: 8655412226966883106}
-  - component: {fileID: 325158803905949583}
   m_Layer: 0
   m_Name: fighter
   m_TagString: Enemy
@@ -157,6 +156,7 @@ MonoBehaviour:
   bulletSpawn2: {fileID: 4928433759426583146}
   speed: 15
   fire: 0
+  Target: {fileID: 0}
   AttackRange: 100
   inRange: 0
   TooClose: 20
@@ -286,18 +286,6 @@ MonoBehaviour:
   health: 0
   explode: 0
   effect: {fileID: 3675263091104240392, guid: 1d95ca44b1b55c64391d672bce065516, type: 3}
---- !u!114 &325158803905949583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670722854352443540}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99b65a7e410d04b409ef47789ff91aa2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2979091421263031237
 GameObject:
   m_ObjectHideFlags: 0

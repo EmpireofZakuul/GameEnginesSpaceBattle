@@ -16,7 +16,7 @@ public class EmpireShipHealth : MonoBehaviour
     public bool stop = false;
     public float timeRemaining = 1;
     public bool timerIsRunning = false;
-
+    public AudioManager AudioManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +75,7 @@ public class EmpireShipHealth : MonoBehaviour
     {
        
         Instantiate(effect, transform.position, transform.rotation);
+        AudioManager.Play("Explode");
         //Instantiate(brokenShip, transform.position, transform.rotation);
         Destroy(cameraHolder);
         Destroy(topDownCamera);

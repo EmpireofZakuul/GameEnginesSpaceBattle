@@ -26,7 +26,7 @@ public class EmpireShipExplode : MonoBehaviour
     {
         if (other.gameObject.tag == "EternalEnemy" || other.gameObject.layer == 8)
         {
-            Debug.Log("hit ship");
+           // Debug.Log("hit ship");
             EmpireShipHealth.TakeDamage(1000);
           
             Explode();
@@ -38,7 +38,7 @@ public class EmpireShipExplode : MonoBehaviour
 
     public void Explode()
     {
-        Debug.Log("Explode");
+       // Debug.Log("Explode");
 
         Collider[] coll = Physics.OverlapSphere(transform.position, BlowRadius);
 

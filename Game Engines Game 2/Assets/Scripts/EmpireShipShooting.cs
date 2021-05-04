@@ -135,7 +135,7 @@ public class EmpireShipShooting : MonoBehaviour
 
             if (hit.collider.gameObject.tag == "EternalEnemy")
             {
-                Debug.Log(hit.point);
+               // Debug.Log(hit.point);
                 targetFound = true;
 
                 if(targetFound && !audioOn )
