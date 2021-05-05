@@ -9,6 +9,8 @@ TagManager:
   - EternalEnemy
   - Bullet
   - SpawnPoint
+  - EmpireEnemy
+  - Fighter
   layers:
   - Default
   - TransparentFX

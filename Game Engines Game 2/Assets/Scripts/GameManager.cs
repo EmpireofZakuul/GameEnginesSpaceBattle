@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public float smoothSpeed = 10f;
     public Vector3 cameraOffset;
     public AudioManager AudioManager;
+
+  
     public static GameManager Instance { get; private set; }
     
 

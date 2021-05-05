@@ -15,6 +15,10 @@ public class CameraFollow2 : MonoBehaviour
     public bool moving = true;
     public Vector3 positionToMoveTo;
     public Vector3 targetRot;
+    public Camera EternalCamera;
+    public Camera FighterCamera;
+    public float fighterTime = 2f;
+    public bool fighterTimeIsRunning = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,29 +29,29 @@ public class CameraFollow2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
-       /* if( transform.position.x <= 11718 && !newSpeed)
-        {
-            speed = 120f;
-        }
 
-        if(transform.position.x <= 6793 && !roated)
-        {
-            speed = 50;
-            roated = true;
-            newSpeed = true;
-            transform.Rotate(15 , 90 , 0);
-        }
-       */
+        /* if( transform.position.x <= 11718 && !newSpeed)
+         {
+             speed = 120f;
+         }
 
-        if(transform.position != cameraEnd.position && !position)
+         if(transform.position.x <= 6793 && !roated)
+         {
+             speed = 50;
+             roated = true;
+             newSpeed = true;
+             transform.Rotate(15 , 90 , 0);
+         }
+        */
+
+        if (transform.position != cameraEnd.position && !position)
         {
             transform.position = Vector3.MoveTowards(transform.position, cameraEnd.position, speed * Time.deltaTime);
-            
+
         }
 
-        if(transform.position == cameraEnd.position && !roated)
+        if (transform.position == cameraEnd.position && !roated)
         {
             position = true;
             roated = true;
@@ -58,7 +62,7 @@ public class CameraFollow2 : MonoBehaviour
 
         if (timeIsRunning)
         {
-            if(time >= 0)
+            if (time >= 0)
             {
                 time -= Time.deltaTime;
             }
@@ -68,15 +72,29 @@ public class CameraFollow2 : MonoBehaviour
                 timeIsRunning = false;
             }
 
-            if(time == 0 && moving)
+            if (time == 0 && moving)
             {
                 moving = false;
                 StartCoroutine(LerpPosition(positionToMoveTo, 4));
                 StartCoroutine(LerpCamera(Quaternion.Euler(targetRot), 8));
             }
         }
-    }
 
+        if (fighterTimeIsRunning)
+        {
+            if (fighterTime >= 0)
+            {
+                fighterTime -= Time.deltaTime;
+            }
+            else
+            {
+                fighterTime = 0;
+                fighterTimeIsRunning = false;
+                FighterCamera.enabled = true;
+                EternalCamera.enabled = false;
+            }
+        }
+    }
     IEnumerator LerpPosition(Vector3 targetPos, float duration)
     {
         float moveTime = 0;
@@ -103,5 +121,6 @@ public class CameraFollow2 : MonoBehaviour
             yield return null;
         }
         transform.rotation = endValue;
+        fighterTimeIsRunning = true;
     }
 }

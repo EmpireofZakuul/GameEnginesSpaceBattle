@@ -32,8 +32,12 @@ public class CameraFollow : MonoBehaviour
 
     public float soundTimeRemaining = 2;
     public bool soundTimerIsRunning = false;
+
+    public float fighterTimeRemaining = 1;
+    public bool fighterTimerIsRunning = false;
     public AudioManager AudioManager;
     public FighterSpawn fighterSpawn;
+    public GameObject fighterCamera;
 
     private void Start()
     {
@@ -114,11 +118,30 @@ public class CameraFollow : MonoBehaviour
             }
             else
             {
+                fighterSpawn.spawning = true;
                 AudioManager.Play("DeployTheGarrision");
+                fighterSpawn.spawning = true;
                 soundTimeRemaining = 0;
                 soundTimerIsRunning = false;
-                fighterSpawn.spawning = true;
+                fighterTimerIsRunning = true;
             }
+
+            
+        }
+
+        if (fighterTimerIsRunning)
+        {
+            if (fighterTimeRemaining > 0)
+            {
+                fighterTimeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                fighterTimeRemaining = 0;
+                fighterTimerIsRunning = false;
+                fighterCamera.SetActive(true);
+            }
+               
         }
 
     }

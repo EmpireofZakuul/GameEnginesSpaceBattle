@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EmpireFighterFiring : MonoBehaviour
 {
-    public Transform target;
+    //public Transform target;
     ObjectPool objectPooler;
 
     #region FIGHTERSHOOTING
@@ -15,17 +15,16 @@ public class EmpireFighterFiring : MonoBehaviour
     public Transform bulletSpawn;
     public Transform bulletSpawn2;
     public float speed = 20;
-    public bool fire = false;
+    public bool fire = true;
     private FighterSpawn spawn;
-
-
     #endregion
 
     #region FIGHTER TARGETING
     public Transform Target;
     public float AttackRange = 35;
-    public bool inRange;
+    public bool inRange = true;
     public float TooClose = 10;
+    public float moveToTarget = 300;
 
     #endregion
 
@@ -33,6 +32,14 @@ public class EmpireFighterFiring : MonoBehaviour
     [Header("Ship audio")]
     public AudioSource AudioSource;
     public bool audioOn = false;
+    #endregion
+
+    #region FIGHTERMOVING
+    public float fighterSpeed = 5f;
+    public float fighterTurnSpeed = 5f;
+    public bool flyStraight = true;
+    public float timeRemaining = 4;
+    public bool timerIsRunning = false;
     #endregion
 
     // Start is called before the first frame update
@@ -44,30 +51,72 @@ public class EmpireFighterFiring : MonoBehaviour
         spawn = FindObjectOfType<FighterSpawn>();
         spawn.isFound = true;
         Target = GameObject.FindWithTag("Finish").transform;
+        timerIsRunning = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         float distance = Vector3.Distance(transform.position, Target.position);
-   
-            if (distance <= AttackRange)
-            {
+
+        //if (flyStraight)
+        //{
+            //transform.position += transform.forward * fighterSpeed * Time.deltaTime;
+       // }
+        //else if (!flyStraight)
+       // {
+           // Move();
+       // }
+        
+
+        if (distance <= AttackRange)
+        {
+                fire = true;
                 if (fire == true)
                     nextTimeToFire += Time.deltaTime;
+
                 if (nextTimeToFire >= fireRate)//testing 
                 {
                      Shoot();
                 }
-                else if (distance <= TooClose)
-                {
-                 return;
-                }
+        }
 
-            }
         
 
-      
+        if(distance >= moveToTarget)
+        {
+            inRange = true;
+        }
+
+        if (inRange)
+        {
+            Move();
+        }
+
+        if (distance <= TooClose)
+        {
+            fire = false;
+            inRange = false;
+            transform.position += transform.forward * fighterSpeed * Time.deltaTime;
+        }
+
+        
+
+
+        if (timerIsRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                flyStraight = false;
+                timeRemaining = 0;
+                timerIsRunning = false;
+            }
+        }
+
 
     }
 
@@ -79,11 +128,6 @@ public class EmpireFighterFiring : MonoBehaviour
         objectPooler.SpawnFromPool("BulletFighter", bulletSpawn2.position, bulletSpawn.rotation);
     }
 
-    public void Waypoints()
-    {
-
-    }
-
     public void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
@@ -91,10 +135,14 @@ public class EmpireFighterFiring : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, TooClose);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, moveToTarget);
     }
 
     private void Move()
     {
-        
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Target.position - transform.position), fighterTurnSpeed * Time.deltaTime);
+        transform.position += transform.forward * fighterSpeed * Time.deltaTime;
     }
 }

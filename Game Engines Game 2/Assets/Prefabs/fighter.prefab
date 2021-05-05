@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8655412226966883106}
   m_Layer: 0
   m_Name: fighter
-  m_TagString: Enemy
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f65badc4902294f85177de909559c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   fireRate: 0.8
   projectile: {fileID: 6104028926774926265, guid: eeb7486804b9b314ab50ee0a9e78fa98,
     type: 3}
@@ -157,11 +156,16 @@ MonoBehaviour:
   speed: 15
   fire: 0
   Target: {fileID: 0}
-  AttackRange: 100
+  AttackRange: 200
   inRange: 0
   TooClose: 20
   AudioSource: {fileID: 3008107260161775769}
   audioOn: 0
+  fighterSpeed: 40
+  fighterTurnSpeed: 5
+  flyStraight: 1
+  timeRemaining: 4
+  timerIsRunning: 0
 --- !u!82 &7606235255715539617
 AudioSource:
   m_ObjectHideFlags: 0
