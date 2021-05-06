@@ -66,6 +66,11 @@ This model is of the empires fighter, which I modeled in the blender 3D software
 The Harrrower Class Dreadnaught" was modeled by Kalashnikov 3D and is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/). 
 The model can be found on his page here: https://sketchfab.com/kalashnikov</p>
 
+<p>
+<img src="/StoryBoard/9.PNG" style="width:128px;height:128px;"> 
+DRK-1 Probe Droid by nick.dob is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+The model can be found on his page here: (https://skfb.ly/KPLM) 
+
 
 
 
