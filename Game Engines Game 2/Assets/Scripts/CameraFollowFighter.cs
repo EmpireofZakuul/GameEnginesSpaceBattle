@@ -8,10 +8,16 @@ public class CameraFollowFighter : MonoBehaviour
     public Vector3 cameraOffset;
     public float smoothSpeed = 10f;
    [SerializeField] private GameObject fighter;
+    public Camera topCamera;
+    public Camera fighterCamera;
+    public float fighterTimeRemaining = 10;
+    public bool fighterTimerIsRunning = false;
+
     // Start is called before the first frame update
     void OnEnable()
     {
         fighter = GameObject.FindGameObjectWithTag("Fighter");
+       fighterTimerIsRunning = true;
     }
 
     // Update is called once per frame
@@ -23,5 +29,21 @@ public class CameraFollowFighter : MonoBehaviour
 
 
         transform.LookAt(fighter.transform.position);
+
+
+        if (fighterTimerIsRunning)
+        {
+            if (fighterTimeRemaining > 0)
+            {
+                fighterTimeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                topCamera.enabled = true;
+                fighterCamera.enabled = false;
+                fighterTimeRemaining = 0;
+                fighterTimerIsRunning = false;
+            }
+        }
     }
 }

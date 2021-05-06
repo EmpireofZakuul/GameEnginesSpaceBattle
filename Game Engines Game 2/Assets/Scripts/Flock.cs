@@ -41,7 +41,7 @@ public class Flock : MonoBehaviour
             FlockAgent shipAgent = Instantiate(
                 agentPrefab,
                 //transform.position,
-                Random.insideUnitCircle * shipStartCount * shipDensity, 
+                Random.insideUnitSphere * shipStartCount * shipDensity, 
                 Quaternion.Euler(Vector3.zero),
                 //transform.rotation,
                 transform

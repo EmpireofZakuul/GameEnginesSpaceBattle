@@ -9,6 +9,15 @@ public class TopDownCamera : MonoBehaviour
     public Vector3 cameraOffset;
     public Transform targetObject;
     public float smoothSpeed = 10f;
+    [Header("Droid")]
+    public Transform Droid;
+    public Transform[] waypointRoutes;
+    private int route;
+    public float param;
+    private Vector3 fighterPosition;
+    public float speedModifier = 0.25f;
+    public bool courtuneOn;
+    public bool TrackOn = false;
 
     [Header("Timer")]
     public float timeRemaining = 30;
@@ -19,6 +28,9 @@ public class TopDownCamera : MonoBehaviour
     void Start()
     {
         timerIsRunning = true;
+        route = 0;
+        param = 0f;
+        courtuneOn = false;
     }
 
     // Update is called once per frame
@@ -49,6 +61,40 @@ public class TopDownCamera : MonoBehaviour
 
 
             transform.LookAt(targetObject);
+        }
+
+        if (courtuneOn)
+        {
+            StartCoroutine(StartRoute(route));
+            topDown = false;
+            TrackOn = true;
+        }
+        if (TrackOn)
+        {
+            transform.LookAt(Droid);
+        }
+    }
+
+    public IEnumerator StartRoute(int routeNumber)
+    {
+        courtuneOn = false;
+        Vector3 p0 = waypointRoutes[routeNumber].GetChild(0).position;
+        Vector3 p1 = waypointRoutes[routeNumber].GetChild(1).position;
+        Vector3 p2 = waypointRoutes[routeNumber].GetChild(2).position;
+        Vector3 p3 = waypointRoutes[routeNumber].GetChild(3).position;
+
+        while (param < 1)
+        {
+            param += Time.deltaTime * speedModifier;
+
+            fighterPosition = Mathf.Pow(1 - param, 3) * p0 +
+                3 * Mathf.Pow(1 - param, 2) * param * p1 +
+                3 * (1 - param) * Mathf.Pow(param, 2) * p2 +
+                Mathf.Pow(param, 3) * p3;
+           
+            //transform.LookAt(fighterPosition);
+            transform.position = fighterPosition;
+            yield return new WaitForEndOfFrame();
         }
     }
 }

@@ -16,14 +16,17 @@ public class CameraFollow2 : MonoBehaviour
     public Vector3 positionToMoveTo;
     public Vector3 targetRot;
     public Camera EternalCamera;
-    public Camera FighterCamera;
+    public GameObject FighterCamera;
     public float fighterTime = 2f;
     public bool fighterTimeIsRunning = false;
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -90,10 +93,12 @@ public class CameraFollow2 : MonoBehaviour
             {
                 fighterTime = 0;
                 fighterTimeIsRunning = false;
-                FighterCamera.enabled = true;
+                FighterCamera.SetActive(true);
                 EternalCamera.enabled = false;
             }
         }
+      
+       
     }
     IEnumerator LerpPosition(Vector3 targetPos, float duration)
     {
@@ -123,4 +128,6 @@ public class CameraFollow2 : MonoBehaviour
         transform.rotation = endValue;
         fighterTimeIsRunning = true;
     }
+
+   
 }

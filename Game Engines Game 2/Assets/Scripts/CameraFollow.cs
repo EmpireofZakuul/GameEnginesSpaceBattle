@@ -24,6 +24,8 @@ public class CameraFollow : MonoBehaviour
     public Vector3 targetRotation;
     public GameObject camerTopDown;
     public bool notLookTarget = false;
+    public GameObject probDroid;
+    public TopDownCamera topDown;
 
     [Header("Timer")]
     public float timeRemaining = 30;
@@ -59,8 +61,10 @@ public class CameraFollow : MonoBehaviour
             {
                
                 timeRemaining = 0;
-                //camerTopDown.SetActive(true);
-                topDownCamera.enabled = true;
+
+                //topDownCamera.enabled = true;
+                fighterCamera.SetActive(true);
+               // topDownCamera.enabled = true;
                 firstCamera.enabled = false;
                 timerIsRunning = false;
                 startTimer = true;
@@ -118,18 +122,18 @@ public class CameraFollow : MonoBehaviour
             }
             else
             {
-                fighterSpawn.spawning = true;
+                //fighterSpawn.spawning = true;
                 AudioManager.Play("DeployTheGarrision");
-                fighterSpawn.spawning = true;
+               // fighterSpawn.spawning = true;
                 soundTimeRemaining = 0;
                 soundTimerIsRunning = false;
-                fighterTimerIsRunning = true;
+               // fighterTimerIsRunning = true;
             }
 
             
         }
 
-        if (fighterTimerIsRunning)
+       /* if (fighterTimerIsRunning)
         {
             if (fighterTimeRemaining > 0)
             {
@@ -143,13 +147,17 @@ public class CameraFollow : MonoBehaviour
             }
                
         }
+       */
 
     }
     IEnumerator SoundEffect()
     {
         yield return new WaitForSeconds(15f);
         AudioManager.Play("emperor");
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(28f);
+        probDroid.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        topDown.courtuneOn = true;
         AudioManager.Play("probe");
        
     }
