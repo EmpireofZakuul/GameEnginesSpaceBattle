@@ -6,6 +6,20 @@
 </P>
 
 <h1>Description of the project</h1>
+<h2> There are 4 different scenes in the project.  the title scene,  the cutscene, the sample scene and the credit scene. The cutscene starts with the title scene.</h2>
+
+<h1>References</h1>
+<p>
+<h2>Credits</h2>
+<b>Star wars theme: https://www.youtube.com/watch?v=tGsKzZtRwxw&t=28s&ab_channel=Greg <br>
+<b>Star wars the old republic cutscene: https://www.youtube.com/watch?v=Tu7lavtmPmA&t=408s&ab_channel=Tamiil%27sAdventures <br>
+<b>Star Wars - Tenebrae, The Dark Lord of Many Faces Theme [Extended]: https://www.youtube.com/watch?v=CMZ6g4rESNY&t=119s&ab_channel=TheAdmiral <br>
+<br TIE fighter explode" Sound: https://www.soundboard.com/sb/sound/963764</br>
+<br>X-Wing explode" Sound: https://www.soundboard.com/sb/sound/963774</br>
+<br>Battle alarm" Sound: https://www.soundboard.com/sb/sound/963756</br>
+<br>Are we blind? Deploy the Garrison!: https://www.youtube.com/watch?v=2PjCClrO5SA&ab_channel=StarWarsClips</br>
+<br></br>
+</p>
 <p>
 This Project was built with unity 2019.4.1f1
 </p>
@@ -74,13 +88,7 @@ The model can be found on his page here: (https://skfb.ly/KPLM)
 
 
 
-<h1>References</h1>
-<p>
-<h2>Videos</h2>
-<b> <br>
-<b> <br>
-<b> <br>
-</p>
+
 
 
 </body>
