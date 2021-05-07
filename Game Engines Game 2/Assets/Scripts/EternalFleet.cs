@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class EternalFleet : MonoBehaviour
 {
 
@@ -65,14 +66,54 @@ public class EternalFleet : MonoBehaviour
     public GameObject holder;
     public float speed = 600f;
     public FighterMovement movment;
+    public float timeRemaining = 3;
+    public bool timerIsRunning = false;
+    public bool go = false;
 
+    public Image fadIn;
 
+    public void Start()
+    {
+        fadIn.canvasRenderer.SetAlpha(0f);
+    }
     public void Update()
     {
-        if (movment.eternalFleetMove == true)
+        if (timerIsRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                go = true;
+                timeRemaining = 0;
+                timerIsRunning = false;
+            }
+        }
+        if(movment.eternalFleetMove == true)
+        {
+            timerIsRunning = true;
+        }
+
+        if (go)
         {
             holder.transform.position = Vector3.MoveTowards(holder.transform.position, cameraEnd.position, speed * Time.deltaTime);
         }
+
+        if (holder.transform.position == cameraEnd.position && go)
+        {
+            StartCoroutine("Fade");
+            go = false;
+        }
+
     }
+        IEnumerator Fade()
+        {
+            fadIn.CrossFadeAlpha(1, 5, false);
+            yield return new WaitForSeconds(20f);
+            SceneManager.LoadScene(3);
+        }
+    
 
 }

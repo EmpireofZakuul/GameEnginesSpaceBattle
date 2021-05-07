@@ -12,6 +12,10 @@ public class CameraFollowFighter : MonoBehaviour
     public Camera fighterCamera;
     public float fighterTimeRemaining = 10;
     public bool fighterTimerIsRunning = false;
+    public bool lastCameraTime = false;
+    public float lastCameraTimeRemaining = 15;
+    public Camera panCamera;
+    public PanCameraSwap panCameraSwap;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -21,7 +25,7 @@ public class CameraFollowFighter : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         Vector3 desiredCameraPosition = fighter.transform.position + cameraOffset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredCameraPosition, smoothSpeed * Time.deltaTime);
@@ -43,6 +47,24 @@ public class CameraFollowFighter : MonoBehaviour
                 fighterCamera.enabled = false;
                 fighterTimeRemaining = 0;
                 fighterTimerIsRunning = false;
+            }
+        }
+
+
+
+        if (lastCameraTime)
+        {
+            if (lastCameraTimeRemaining > 0)
+            {
+                lastCameraTimeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                fighterCamera.enabled = false;
+                panCamera.enabled = true;
+                panCameraSwap.timerIsRunning = true;
+                lastCameraTimeRemaining = 0;
+                lastCameraTime = false;
             }
         }
     }

@@ -12,6 +12,10 @@ public class EternalFleetBezierCurve : MonoBehaviour
     private Vector3 fighterPosition;
     public float speedModifier = 0.25f;
     public bool courtuneOn;
+    public float count = 0f;
+    public Camera fighterCamera;
+    public Camera bezierCamera;
+    public CameraFollowFighter cameraFollow;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +36,7 @@ public class EternalFleetBezierCurve : MonoBehaviour
     }
     public IEnumerator StartRoute(int routeNumber)
     {
+        count++;
         courtuneOn = false;
         Vector3 p0 = waypointRoutes[routeNumber].GetChild(0).position;
         Vector3 p1 = waypointRoutes[routeNumber].GetChild(1).position;
@@ -49,7 +54,7 @@ public class EternalFleetBezierCurve : MonoBehaviour
 
             transform.LookAt(fighterPosition);
             transform.position = fighterPosition;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForFixedUpdate();
         }
 
         param = 0f;
@@ -58,7 +63,26 @@ public class EternalFleetBezierCurve : MonoBehaviour
 
         if (route > waypointRoutes.Length - 1)
             route = 0;
+        
+        
+        if(count == 2)
+        {
+            courtuneOn = false;
 
-        courtuneOn = true;
+            if(param == 0)
+            {
+                fighterCamera.enabled = true;
+                bezierCamera.enabled = false;
+               cameraFollow.lastCameraTime = true;
+            }
+        }
+        else 
+        {
+            courtuneOn = true;
+        }
+                
+        
+
+       
     }
 }
