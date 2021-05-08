@@ -20,8 +20,7 @@ public class FighterMovement : MonoBehaviour
 
     public Camera FinalCamera;
     public Camera LastCutsceneCamera;
-    public Camera panCamera;
-    public Camera sidePanCamera;
+ 
 
 
     void OnEnable()
@@ -35,6 +34,7 @@ public class FighterMovement : MonoBehaviour
         courtuneOn = true;
         timerIsRunning = true;
 
+      
     }
 
     // Update is called once per frame
@@ -57,8 +57,7 @@ public class FighterMovement : MonoBehaviour
                 LastCutsceneCamera.enabled = true;
                 FinalCamera.enabled = false;
                 eternalFleetMove = true;
-                panCamera.enabled = false;
-                sidePanCamera.enabled = false;
+             
                 timerIsRunning = false;
             }
         }

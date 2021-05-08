@@ -17,13 +17,16 @@ public class GameManager : MonoBehaviour
     public bool timerIsRunning = false;
     public GameObject finalCamera;
     public Camera SecondCamera;
-    public Camera fighterCamera;
+    public GameObject fighterCamera;
     public Camera eternalBezierCamera;
     public float smoothSpeed = 10f;
     public Vector3 cameraOffset;
     public AudioManager AudioManager;
+    public GameObject panCamera;
+    public GameObject sidePanCamera;
+   
 
-  
+
     public static GameManager Instance { get; private set; }
     
 
@@ -59,27 +62,29 @@ public class GameManager : MonoBehaviour
 
         if (shipCounter == 1 && !last && timerIsRunning)
         {
-                if (timeRemaining > 0)
-                {
-                    timeRemaining -= Time.deltaTime;
-                }
-                else
-                {
-                    ship = GameObject.FindGameObjectWithTag("EmpireEnemy");
-                   // Debug.Log(ship.name);
-                    ship.GetComponent<ShipMovement>().pathFollowingEnabled = false;
-                    ship.GetComponent<ShipMovement>().seekEnabled = true;
-                    ship.GetComponent<EmpireShipHealth>().maxHealth = 1000;
-                    finalCamera.SetActive(true);
-                    SecondCamera.enabled = false;
-                    fighterCamera.enabled = false;
-                    eternalBezierCamera.enabled = false;
-                    last = true;
-                    timeRemaining = 0;
-                    StartCoroutine(LastShip());
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                ship = GameObject.FindGameObjectWithTag("EmpireEnemy");
+                // Debug.Log(ship.name);
+                ship.GetComponent<ShipMovement>().pathFollowingEnabled = false;
+                ship.GetComponent<ShipMovement>().seekEnabled = true;
+                ship.GetComponent<EmpireShipHealth>().maxHealth = 1000;
+                finalCamera.SetActive(true);
+                SecondCamera.enabled = false;
+                fighterCamera.SetActive(false);
+                eternalBezierCamera.enabled = false;
+                panCamera.SetActive(false);
+                sidePanCamera.SetActive(false);
+                last = true;
+                timeRemaining = 0;
+                StartCoroutine(LastShip());
 
 
-                }
+            }
 
         }
 

@@ -12524,11 +12524,13 @@ MonoBehaviour:
   timerIsRunning: 0
   finalCamera: {fileID: 1254400302}
   SecondCamera: {fileID: 1010680401}
-  fighterCamera: {fileID: 1010680401}
+  fighterCamera: {fileID: 2008530450}
   eternalBezierCamera: {fileID: 397272405}
   smoothSpeed: 10
   cameraOffset: {x: 0, y: 0, z: 200}
   AudioManager: {fileID: 1886205714}
+  panCamera: {fileID: 2027445550}
+  sidePanCamera: {fileID: 532948108}
 --- !u!4 &483677535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8420824533263646256, guid: 803f8e5e43920b549991fafd92125200,
@@ -29507,8 +29509,6 @@ MonoBehaviour:
   timerIsRunning: 0
   FinalCamera: {fileID: 1254400305}
   LastCutsceneCamera: {fileID: 1195447622}
-  panCamera: {fileID: 2027445553}
-  sidePanCamera: {fileID: 532948110}
 --- !u!4 &1261649697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8420824533057775487, guid: 803f8e5e43920b549991fafd92125200,
@@ -31759,7 +31759,7 @@ PrefabInstance:
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}
       propertyPath: maxHealth
-      value: 700
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 340425860661170951, guid: 803f8e5e43920b549991fafd92125200,
         type: 3}

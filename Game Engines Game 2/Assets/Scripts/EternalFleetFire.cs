@@ -101,6 +101,7 @@ public class EternalFleetFire : MonoBehaviour
         {
             shooting = false;
             turnShooting = false;
+            timerIsRunning = false;
         }
 
 
