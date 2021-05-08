@@ -33251,7 +33251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02089dbc16a2e049909d6e01108e65f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 25
+  timeRemaining: 30
   timerIsRunning: 0
   panCamera: {fileID: 2027445550}
   SidePanCamera: {fileID: 532948108}
