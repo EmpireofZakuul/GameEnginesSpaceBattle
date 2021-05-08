@@ -85,14 +85,14 @@ public class EternalFleetFire : MonoBehaviour
             else
             {
                 timerStopCount++;
-                timeRemaining = 20;
+                timeRemaining = 10;
                 targetFound = false;
                 //timerIsRunning = false;
 
             }
         }
        
-        if(timerStopCount == 4)
+        if(timerStopCount == 8)
         {
             timerIsRunning = false;
         }

@@ -33251,7 +33251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02089dbc16a2e049909d6e01108e65f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 30
+  timeRemaining: 35
   timerIsRunning: 0
   panCamera: {fileID: 2027445550}
   SidePanCamera: {fileID: 532948108}
@@ -33259,7 +33259,7 @@ MonoBehaviour:
   - {fileID: 1178965615}
   target: {fileID: 1954158760}
   param: 0
-  speedModifier: 0.03
+  speedModifier: 0.025
 --- !u!20 &2027445553
 Camera:
   m_ObjectHideFlags: 0
@@ -33284,7 +33284,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 4000
+  far clip plane: 5000
   field of view: 60
   orthographic: 0
   orthographic size: 5

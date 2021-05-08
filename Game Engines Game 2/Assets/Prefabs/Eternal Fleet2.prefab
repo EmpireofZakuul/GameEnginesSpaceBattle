@@ -121,10 +121,12 @@ MonoBehaviour:
   bulletSpawn3: {fileID: 5951960581040569676}
   bulletSpawn4: {fileID: 6805752163252164214}
   speed: 50
-  timeRemaining: 20
+  timeRemaining: 10
   timerIsRunning: 0
   timerStopCount: 0
   character: 0
+  shooting: 1
+  turnShooting: 1
 --- !u!1 &4769165733745374820
 GameObject:
   m_ObjectHideFlags: 0
