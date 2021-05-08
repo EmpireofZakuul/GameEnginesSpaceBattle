@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public float timeRemaining = 1;
     public bool timerIsRunning = false;
     public GameObject finalCamera;
-    public Camera SecondCamera;
+   // public Camera SecondCamera;
     public GameObject fighterCamera;
     public Camera eternalBezierCamera;
     public float smoothSpeed = 10f;
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
                 ship.GetComponent<ShipMovement>().seekEnabled = true;
                 ship.GetComponent<EmpireShipHealth>().maxHealth = 1000;
                 finalCamera.SetActive(true);
-                SecondCamera.enabled = false;
+                //SecondCamera.enabled = false;
                 fighterCamera.SetActive(false);
                 eternalBezierCamera.enabled = false;
                 panCamera.SetActive(false);
