@@ -14,7 +14,7 @@ public class CameraFollowFighter : MonoBehaviour
     public bool fighterTimerIsRunning = false;
     public bool lastCameraTime = false;
     public float lastCameraTimeRemaining = 15;
-    public Camera panCamera;
+    public GameObject panCamera;
     public PanCameraSwap panCameraSwap;
 
     // Start is called before the first frame update
@@ -61,7 +61,7 @@ public class CameraFollowFighter : MonoBehaviour
             else
             {
                 fighterCamera.enabled = false;
-                panCamera.enabled = true;
+                panCamera.SetActive(true);
                 panCameraSwap.timerIsRunning = true;
                 lastCameraTimeRemaining = 0;
                 lastCameraTime = false;

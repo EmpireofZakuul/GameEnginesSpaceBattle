@@ -13,7 +13,10 @@ public class CutSceneFadIn : MonoBehaviour
     void Start()
     {
         timerIsRunning = true;
-        fadIn.canvasRenderer.SetAlpha(0f);
+        //fadIn.canvasRenderer.SetAlpha(0f);
+        Color color = fadIn.color;
+        color.a = 0f;
+        fadIn.color = color;
     }
 
     // Update is called once per frame
@@ -36,8 +39,19 @@ public class CutSceneFadIn : MonoBehaviour
     }
     IEnumerator Fade()
     {
-        fadIn.CrossFadeAlpha(1, 5, false);
-        yield return new WaitForSeconds(2f);
+        // fadIn.CrossFadeAlpha(1, 5, false);
+        // yield return new WaitForSeconds(20f);
+        while (fadIn.color.a < 1F)
+        {
+            Color col = fadIn.color;
+            col.a += Time.deltaTime * 0.2f;
+            fadIn.color = col;
+            yield return null;
+        }
+
+        Color color = fadIn.color;
+        color.a = 1f;
+        fadIn.color = color;
         SceneManager.LoadScene(2);
     }
 }

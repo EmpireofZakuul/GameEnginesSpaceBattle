@@ -74,7 +74,10 @@ public class EternalFleet : MonoBehaviour
 
     public void Start()
     {
-        fadIn.canvasRenderer.SetAlpha(0f);
+        //fadIn.canvasRenderer.SetAlpha(0f);
+        Color color = fadIn.color;
+        color.a = 0f;
+        fadIn.color = color;
     }
     public void Update()
     {
@@ -108,12 +111,23 @@ public class EternalFleet : MonoBehaviour
         }
 
     }
-        IEnumerator Fade()
+    IEnumerator Fade()
+    {
+        // fadIn.CrossFadeAlpha(1, 5, false);
+        // yield return new WaitForSeconds(20f);
+        while (fadIn.color.a < 1F)
         {
-            fadIn.CrossFadeAlpha(1, 5, false);
-            yield return new WaitForSeconds(20f);
-            SceneManager.LoadScene(3);
+            Color col = fadIn.color;
+            col.a += Time.deltaTime * 0.02f;
+            fadIn.color = col;
+            yield return null;
         }
+
+        Color color = fadIn.color;
+        color.a = 1f;
+        fadIn.color = color;
+        SceneManager.LoadScene(3);
+    }
     
 
 }

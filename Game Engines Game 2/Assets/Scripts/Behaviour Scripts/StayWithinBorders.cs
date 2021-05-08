@@ -12,10 +12,10 @@ public class StayWithinBorders : FlockBehaviour
     {
         Vector3 centerPoint = center - agent.transform.position;
         float t = centerPoint.magnitude / radius;
-        if(t < 0.9f)
+        if(t < 0.8f)
         {
             return Vector3.zero;
         }
-        return centerPoint * t * t;
+        return centerPoint * Mathf.Pow(t, 2);
     }
 }

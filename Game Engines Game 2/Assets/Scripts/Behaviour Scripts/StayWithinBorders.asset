@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe96197ada6f974588074764b7c03e0, type: 3}
   m_Name: StayWithinBorders
   m_EditorClassIdentifier: 
-  center: {x: 0, y: 0, z: 8271}
-  radius: 300
+  center: {x: 0, y: 0, z: 8500}
+  radius: 250

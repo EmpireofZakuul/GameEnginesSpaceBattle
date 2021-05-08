@@ -13,7 +13,10 @@ public class TitleFadIn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fadIn.canvasRenderer.SetAlpha(0f);
+        // fadIn.canvasRenderer.SetAlpha(0f);
+        Color color = fadIn.color;
+        color.a = 0f;
+        fadIn.color = color;
         speed = GetComponentInParent<Canvas>().transform.lossyScale.y * speed;
     }
 
@@ -33,8 +36,19 @@ public class TitleFadIn : MonoBehaviour
 
     IEnumerator Fade()
     {
-        fadIn.CrossFadeAlpha(1, 5, false);
-        yield return new WaitForSeconds(3f);
+        // fadIn.CrossFadeAlpha(1, 5, false);
+        // yield return new WaitForSeconds(20f);
+        while (fadIn.color.a < 1F)
+        {
+            Color col = fadIn.color;
+            col.a += Time.deltaTime * 0.2f;
+            fadIn.color = col;
+            yield return null;
+        }
+
+        Color color = fadIn.color;
+        color.a = 1f;
+        fadIn.color = color;
         SceneManager.LoadScene(1);
     }
 }
