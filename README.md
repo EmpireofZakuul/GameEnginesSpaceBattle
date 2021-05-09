@@ -6,7 +6,12 @@
 </P>
 
 <h1>Description of the project</h1>
-<h2> There are 4 different scenes in the project.  the title scene,  the cutscene, the sample scene and the credit scene. The cutscene starts with the title scene.</h2>
+<h2> There are 4 different scenes in the project.  The Title Scene,  The Cutscene, The Sample Scene and The End Scene. The cutscene starts with the Title Scene.</h2>
+
+<h1>Video Of Game Play</h1>
+
+[![YouTube](http://img.youtube.com/vi/dRkpaaMF/0.jpg)](https://www.youtube.com/watch?v=dRkpaaMF-CI&ab) 
+
 
 <h1>References</h1>
 <p>
