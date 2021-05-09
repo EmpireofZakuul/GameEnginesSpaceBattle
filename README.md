@@ -10,7 +10,7 @@
 
 <h1>Video Of Game Play</h1>
 
-[![YouTube](http://img.youtube.com/vi/dRkpaaMF-CI&ab/0.jpg)](https://www.youtube.com/watch?v=dRkpaaMF-CI&ab) 
+[![YouTube](http://img.youtube.com/vi/dRkpaaMF-CI/0.jpg)](https://www.youtube.com/watch?v=dRkpaaMF-CI) 
 
 
 <h1>References</h1>
