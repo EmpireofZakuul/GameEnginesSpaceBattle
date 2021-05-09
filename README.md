@@ -6,9 +6,7 @@
 </P>
 <h2> Project Information</h2>
 <p>
-
-This space battle scene is based off the star wars game, star wars the old republic. Where the empire fights against the eternal throne.
-In this space battle, we will have the perspective of both the empires and the eternal thrones fleet.
+This Project was built with unity 2019.4.1f1
 </p>
 
 <h1>Description of the project</h1>
@@ -31,9 +29,7 @@ In this space battle, we will have the perspective of both the empires and the e
 <br>Are we blind? Deploy the Garrison!: https://www.youtube.com/watch?v=2PjCClrO5SA&ab_channel=StarWarsClips</br>
 <br></br>
 </p>
-<p>
-This Project was built with unity 2019.4.1f1
-</p>
+
 <p>
 This space battle scene is based off the star wars game, star wars the old republic. Where the empire fights against the eternal throne.
 In this space battle, we will have the perspective of both the empires and the eternal thrones fleet.
