@@ -8,7 +8,7 @@
 <h1>Description of the project</h1>
 <h2> There are 4 different scenes in the project.  The Title Scene,  The Cutscene, The Sample Scene and The End Scene. The cutscene starts with the Title Scene.</h2>
 
-<h1>Video Of Game Play</h1>
+<h1>Video Of Cut Scene</h1>
 
 [![YouTube](http://img.youtube.com/vi/dRkpaaMF-CI/0.jpg)](https://www.youtube.com/watch?v=dRkpaaMF-CI) 
 
