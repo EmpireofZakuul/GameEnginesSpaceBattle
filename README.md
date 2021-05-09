@@ -4,6 +4,12 @@
 <b>Student Number:</b>D19124543<br>
 <b>Class Group:</b>DT508
 </P>
+<h2> Project Information</h2>
+<p>
+
+This space battle scene is based off the star wars game, star wars the old republic. Where the empire fights against the eternal throne.
+In this space battle, we will have the perspective of both the empires and the eternal thrones fleet.
+</p>
 
 <h1>Description of the project</h1>
 <h2> There are 4 different scenes in the project.  The Title Scene,  The Cutscene, The Sample Scene and The End Scene. The cutscene starts with the Title Scene.</h2>
